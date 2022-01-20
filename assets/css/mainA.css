@@ -26,14 +26,17 @@ ul {
     margin: 0;
     padding: 0;
 }
-.overlayxxx {
+.overlay {
     background-color: rgba(0, 0, 0, 0.68);
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    display: none;
+    z-index: 1;
 }
+
 /* #endregion GENERAL */
 
 /* #region .header__navbar */
@@ -506,7 +509,13 @@ ul {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
+    z-index: 10;
 }
+
+#toggle1:checked ~ .header__fix-product-container {
+    display: block;
+}
+
 .header__fix-btn--product-item:focus ~ .header__fix-product-container {
     display: block;
 }
@@ -752,6 +761,10 @@ ul {
 
         /* #region Fixed Bar Support Button */
 
+#toggle2:checked ~ .header__fix-support-container {
+    display: block;
+}
+
 .header__fix-btn--support-item:focus ~ .header__fix-support-container {
     display: block;
 }
@@ -821,6 +834,11 @@ ul {
         /* #endregion Fixed Bar Support Button */
 
         /* #region Fixed Bar Learn Button */
+
+#toggle3:checked ~ .header__fix-learn-container {
+    display: block;
+}
+
 .header__fix-btn--learn-item:focus ~ .header__fix-learn-container {
     display: block;
 }
@@ -836,29 +854,35 @@ ul {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    /* display: none; */
 }
 
         /* #endregion Fixed Bar Learn Button */
 
         /* #region Fixed Bar Community Button */
-        .header__fix-btn--community-item:focus ~ .header__fix-community-container {
-            display: block;
-        }
-        .header__fix-community-container {
-            position: absolute; 
-            top: var(--fixedbar-height);
-            display: none;
-        }
-        .header__fix-community-panel {
-            width: 224px;
-            height: 159px;
-            background-color: var(--white-color);
-            box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
-            border-bottom-left-radius: 4px;
-            border-bottom-right-radius: 4px;
-            /* display: none; */
-        }
+
+#toggle4:checked ~ .header__fix-community-container {
+    display: block;
+}
+.toggle-visible-hidden {
+    display: none;
+}
+.header__fix-btn--community-item:focus ~ .header__fix-community-container {
+    display: block;
+}
+
+.header__fix-community-container {
+    position: absolute; 
+    top: var(--fixedbar-height);
+    display: none;
+}
+.header__fix-community-panel {
+    width: 224px;
+    height: 159px;
+    background-color: var(--white-color);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
         
                 /* #endregion Fixed Bar Learn Button */
 
