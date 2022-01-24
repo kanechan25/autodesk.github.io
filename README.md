@@ -4,7 +4,7 @@
 
 	<img src="https://github.com/kanechan25/autodesk.github.io/blob/main/assets/img/autodesk-demo.gif">
   
-- With only html & css, you still can build up effect of Carousel or other Animation.
+- With only html & css, you still can build up many effect of Carousel or other Animation.
 
 - Hoping it make you enjoy!
 ---
