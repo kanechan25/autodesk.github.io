@@ -1,5 +1,5 @@
 ## Hi, I'm Khoa Tran <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> - BIM Technician - Developer 
-## [Autodesk Website](https://kanechan25.github.io/autodesk.github.io/)
+## Go to my [Autodesk Website](https://kanechan25.github.io/autodesk.github.io/)
 - It's written by just only html + css
 
 	<img src="https://github.com/kanechan25/autodesk.github.io/blob/main/assets/img/autodesk-demo.gif">
