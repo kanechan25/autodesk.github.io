@@ -1,6 +1,8 @@
 ## Hi, I'm Khoa Tran <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> - BIM Technician - Developer 
-## Go to my [Autodesk Website](https://kanechan25.github.io/autodesk.github.io/){:target="_blank"}
+## Go to my [Autodesk Website](https://kanechan25.github.io/autodesk.github.io/) {:target="_blank"}
+## <a href="https://kanechan25.github.io/autodesk.github.io/" target="_blank">Go to my Autodesk website</a>
 - It's written by just only html + css
+- <a href="http://stackoverflow.com" target="_blank">Go</a>
 
 	<img src="https://github.com/kanechan25/autodesk.github.io/blob/main/assets/img/autodesk-demo.gif">
   
