@@ -10,17 +10,27 @@
     --popup-win-line: #ccc;
     --header-height: 98px;
     --header-navbar-height: 56px;
-    --search-bar-width: 350px;
-    --fixedbar-height: calc(var(--header-height) - var(--header-navbar-height));
+    --fixedbar-height: calc(var(--header-height) 
+    - var(--header-navbar-height));
     --banner-height: 612px;
     --footer-height: 415px;
     --buy-height: 280px;
+    --search-bar-width: 350px;
 }
 
 * {
     box-sizing: inherit;
 }
 
+body, p, a, ul, li { 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
   /* Works on Chrome, Edge, and Safari */
   /* *::-webkit-scrollbar {
     width: 6px;
@@ -68,7 +78,7 @@ body {
 button {
     background: none;
     text-align: center;
-  }
+}
   
   button.active.focus, button.active:focus,
   button.focus, button:active.focus, 

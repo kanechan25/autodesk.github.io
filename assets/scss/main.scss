@@ -1,0 +1,157 @@
+@import './variables.scss';
+
+* {
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+}
+body, p, a, ul, li { 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    font-style: normal;
+    font-weight: 100;
+    background-color: $color-bg;
+    color: $color-default-text;
+    overflow-x: hidden;
+    font-size: 1.4rem;
+    font-family: 'artifakt-medium', sans-serif;
+    display: block; 
+}
+button {
+    background: none;
+    text-align: center;
+}
+li {
+    list-style: none;
+}
+  
+.overlay {
+    background-color: rgba(0, 0, 0, 0.68);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 1;
+}
+
+.app__header {
+    background-color: $color-black;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    @mixin searchIcon {
+        .header__search-icon {
+            width: 24px;
+            height: 24px;
+            &.left {
+                position: absolute;
+                left: 6px;
+            }
+            &.right {
+
+            }
+            .header__search-icon-logo {
+                cursor: default;
+                background-color: transparent;
+                opacity: 1;
+                stroke: #ffffff;
+            }
+        }
+    }
+    .header__left, .header__right {
+        max-height: $height-header;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .header__left {
+        float: left;
+        .header__left-logo {
+            width: 140px;
+            .autodesk-logo {
+                height: 100%;
+            }
+        }
+        .header__left-search {
+            .left-search__wrap {
+                @include searchIcon;
+                display: flex;
+                align-items: center;
+                flex: 1;
+                position: relative;
+                background-color: var(--black-color);
+                margin: auto 49px;
+                overflow: hidden;
+
+                .left-search__input {
+                    border: none;
+                    outline: none;
+                    padding: 0px 34px;
+                    width: $width-searchbar;
+                    height: 40px;
+                    border-radius: 4px;
+                    font-size: 1.6rem;
+                    line-height: 3.2rem;
+                    background-color: $color-search;
+                    color: $color-white;
+                    &:hover {
+                        cursor: auto;
+                        background-color: $color-search-hover; 
+                    }
+                    &:focus {
+                        border-color: #0696d7;
+                        box-shadow: #5f60ff 0 0 0 1px inset;
+                    }
+                }
+                .left-search__history {
+                    width: $width-searchbar;
+                    border-bottom-left-radius: 2px;
+                    border-bottom-right-radius: 2px;
+                    background-color: $color-white;
+                    height: 40px;
+                    color: $color-search;
+                    // display: none;
+                }
+            }
+        }
+    }
+
+    .header__right {
+        float: right;
+        .header__right-search-mini {
+            @include searchIcon;
+
+        }
+        .header__right-cart {
+
+        }
+        .header__right-language {
+
+        }
+        .header__right-mini-dot {
+
+        }
+        .header__right-account {
+
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,180 @@
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-style: normal;
+  font-weight: 100;
+  background-color: #d4aeae;
+  color: #f7f3f3;
+  overflow-x: hidden;
+  font-size: 1.4rem;
+  font-family: 'artifakt-medium', sans-serif;
+  display: block;
+}
+
+button {
+  background: none;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.68);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 1;
+}
+
+.app__header {
+  background-color: #000;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header__left, .header .header__right {
+  max-height: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__left {
+  float: left;
+}
+
+.header .header__left .header__left-logo {
+  width: 140px;
+}
+
+.header .header__left .header__left-logo .autodesk-logo {
+  height: 100%;
+}
+
+.header .header__left .header__left-search .left-search__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  background-color: var(--black-color);
+  margin: auto 49px;
+  overflow: hidden;
+}
+
+.header .header__left .header__left-search .left-search__wrap .header__search-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.header .header__left .header__left-search .left-search__wrap .header__search-icon.left {
+  position: absolute;
+  left: 6px;
+}
+
+.header .header__left .header__left-search .left-search__wrap .header__search-icon .header__search-icon-logo {
+  cursor: default;
+  background-color: transparent;
+  opacity: 1;
+  stroke: #ffffff;
+}
+
+.header .header__left .header__left-search .left-search__wrap .left-search__input {
+  border: none;
+  outline: none;
+  padding: 0px 34px;
+  width: 350px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  background-color: #212121;
+  color: #fff;
+}
+
+.header .header__left .header__left-search .left-search__wrap .left-search__input:hover {
+  cursor: auto;
+  background-color: #333;
+}
+
+.header .header__left .header__left-search .left-search__wrap .left-search__input:focus {
+  border-color: #0696d7;
+  -webkit-box-shadow: #5f60ff 0 0 0 1px inset;
+          box-shadow: #5f60ff 0 0 0 1px inset;
+}
+
+.header .header__left .header__left-search .left-search__wrap .left-search__history {
+  width: 350px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: #fff;
+  height: 40px;
+  color: #212121;
+}
+
+.header .header__right {
+  float: right;
+}
+
+.header .header__right .header__right-search-mini .header__search-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.header .header__right .header__right-search-mini .header__search-icon.left {
+  position: absolute;
+  left: 6px;
+}
+
+.header .header__right .header__right-search-mini .header__search-icon .header__search-icon-logo {
+  cursor: default;
+  background-color: transparent;
+  opacity: 1;
+  stroke: #ffffff;
+}
+/*# sourceMappingURL=main.css.map */
