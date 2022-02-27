@@ -937,7 +937,7 @@ ul.carousel__slides input {
     display: block;
 }
 
-.slide-image {
+.slide-image { /*carousel-slide aec*/
     position: absolute;
     top: var(--header-height);
     left: 0;
@@ -947,7 +947,7 @@ ul.carousel__slides input {
     
 }   
 
-.slide-image--item {
+.slide-image--item { /* slide__img */
     position: relative; /*  important */
     width: 2000px;
     top: -187px;
@@ -956,7 +956,7 @@ ul.carousel__slides input {
     object-fit: cover;
     object-position: 0 0;
 }
-.slide-image--text {
+.slide-image--text { 
     position: relative;
     color: var(--white-color);
     font-family: 'artifakt-bold', sans-serif;
