@@ -20,7 +20,7 @@ body, p, a, ul, li, h1, h2, h3, h4, h5, h6 {
 body {
   font-style: normal;
   font-weight: 100;
-  background-color: #d4aeae;
+  background-color: #fbfbfb;
   color: #f7f3f3;
   overflow-x: hidden;
   font-size: 1.4rem;
@@ -37,7 +37,6 @@ li {
   list-style: none;
 }
 
-/* #endregion Genaral */
 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
@@ -53,6 +52,7 @@ li {
   display: block;
 }
 
+/* #endregion Genaral */
 .app__header {
   background-color: #000;
   z-index: 999;
@@ -381,9 +381,99 @@ li {
   margin-left: 5px;
 }
 
-.carousel {
+.carousel-banner {
   background-color: #000;
   height: 612px;
+  z-index: 2;
+  overflow: hidden;
+  background-image: url("/assets/img/2. body_carousel/aec-factoryos-hero-banner-2000x1200.jpg");
+  background-size: auto 197%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.carousel-banner .carousel-controls-half {
+  position: relative;
+  z-index: 2;
+}
+
+.carousel-banner .carousel-controls-half .control-half-btn {
+  z-index: 2;
+  position: absolute;
+  top: -332px;
+  border: none;
+  background-color: #fff;
+  height: 90px;
+  width: 45px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.carousel-banner .carousel-controls-half .control-half-btn:hover {
+  cursor: pointer;
+}
+
+.carousel-banner .carousel-controls-half .control-half-btn.prev-slide {
+  border-bottom-right-radius: 90px;
+  border-top-right-radius: 90px;
+  position: absolute;
+  left: -4px;
+}
+
+.carousel-banner .carousel-controls-half .control-half-btn.next-slide {
+  border-bottom-left-radius: 90px;
+  border-top-left-radius: 90px;
+  position: absolute;
+  right: -4px;
+}
+
+.carousel-banner .carousel-controls-half .control-half-btn .prev-btn-icon {
+  font-size: 40px;
+  padding: 0px 0px 4px 6px;
+}
+
+.carousel-banner .carousel-controls-half .control-half-btn .next-btn-icon {
+  font-size: 40px;
+  padding: 0px 0px 4px 14px;
+}
+
+.carousel {
+  background-color: transparent;
+  height: 612px;
+  position: relative;
+}
+
+.carousel .carousel-headings-wrap::before {
+  width: 40px;
+  height: 84px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(4%, #161616), color-stop(48%, rgba(22, 22, 22, 0.7)), to(rgba(22, 22, 22, 0)));
+  background: linear-gradient(90deg, #161616 4%, rgba(22, 22, 22, 0.7) 48%, rgba(22, 22, 22, 0) 100%);
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  pointer-events: none;
+  display: none;
+}
+
+.carousel .carousel-headings-wrap::after {
+  width: 40px;
+  height: 83px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(4%, #161616), color-stop(48%, rgba(22, 22, 22, 0.7)), to(rgba(22, 22, 22, 0)));
+  background: linear-gradient(270deg, #161616 4%, rgba(22, 22, 22, 0.7) 48%, rgba(22, 22, 22, 0) 100%);
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+  pointer-events: none;
+  display: none;
 }
 
 .carousel .carousel__headings {
@@ -422,6 +512,7 @@ li {
 
 .carousel .carousel__toggle .carousel-slide {
   position: absolute;
+  width: 100%;
   display: none;
 }
 
@@ -438,19 +529,6 @@ li {
   font-weight: 900;
 }
 
-.carousel .carousel__toggle .carousel-slide .slide__img {
-  position: relative;
-  top: -29px;
-  left: -390px;
-  width: 2000px;
-  /* responsive this property */
-  height: 612px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0 0;
-     object-position: 0 0;
-}
-
 .carousel .carousel__toggle .carousel-slide .slide__copyright {
   position: absolute;
   font-size: 1.25rem;
@@ -461,6 +539,7 @@ li {
 .carousel .carousel__toggle .carousel-slide.go-shop {
   display: block;
   top: 390px;
+  width: 174px;
   background-color: #fff;
   color: #000;
   font-size: 1.6rem;
@@ -475,5 +554,168 @@ li {
 
 .carousel .carousel__toggle .carousel-slide.active {
   display: block;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel .carousel-controls {
+  z-index: 2;
+}
+
+.carousel .carousel-controls .control-btn {
+  position: absolute;
+  top: 269.28px;
+  border: none;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.carousel .carousel-controls .control-btn:hover {
+  cursor: pointer;
+}
+
+.carousel .carousel-controls .control-btn .control-btn-icon {
+  font-size: 40px;
+  padding-left: 14px;
+}
+
+.carousel .carousel-controls .control-btn.prev-slide {
+  position: relative;
+  right: 70px;
+}
+
+.carousel .carousel-controls .control-btn.next-slide {
+  position: relative;
+  left: 1170px;
+}
+
+.carousel-core-react.grid.wide {
+  max-width: 1260px;
+}
+
+.core-react {
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.core-react .core-react__item {
+  background-color: #fff;
+  font-family: 'artifakt-bold';
+  margin: 0px 10px 30px 10px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.28);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.28);
+  overflow: hidden;
+}
+
+.core-react .core-react__item .core-react__link {
+  color: #000;
+  position: relative;
+}
+
+.core-react .core-react__item .core-react__link .item-content .item-content__text {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: 900;
+  letter-spacing: 0.05rem;
+  margin: 30px 28px 28px 30px;
+  min-height: 185px;
+}
+
+.core-react .core-react__item .core-react__link .item-content .direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 28px 20px 30px;
+  min-height: 50px;
+  font-size: 1.6rem;
+  font-family: 'artifakt-medium', sans-serif;
+}
+
+.core-react .core-react__item .core-react__link .item-content .direction .direction-icon {
+  width: 28px;
+}
+
+.core-react .core-react__item .core-react__link .item-content .direction .direction-text {
+  margin-left: 10px;
+}
+
+.core-react .core-react__item .core-react__link .item-content .item-content__copyright-text {
+  position: absolute;
+}
+
+.core-react .core-react__item .core-react__link .img-wrap .item-img {
+  margin-bottom: -6px;
+}
+
+.core-react .core-react__item .core-react__link .img-wrap .item-img .item-link-img {
+  width: 100%;
+}
+
+.core-react .core-react__item .core-react__link .item-content__buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.core-react .core-react__item .core-react__link .item-content__buy .item-content__img-buy {
+  margin: 20px;
+  width: 20%;
+}
+
+.core-react .core-react__item.item-aec .core-react__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.core-react .core-react__item.item-aec .core-react__link .img-wrap {
+  position: relative;
+}
+
+.core-react .core-react__item.item-aec .core-react__link .img-wrap .item-img .item-link-img {
+  width: 180%;
+}
+
+.core-react .row .col:first-child .core-react__item .core-react__link .img-wrap {
+  position: relative;
+}
+
+.core-react .row .col:first-child .core-react__item .core-react__link .img-wrap .item-img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  bottom: 0px;
+}
+
+.xfpage {
+  height: 516px;
+  background-color: #000;
+  background-image: url("/assets/img/2. body_container/future-of-work-banner-2000x1200-2.jpg");
+  background-size: auto 197%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.xxxxxxxxx {
+  border: 2px solid blue;
+  margin: 20px;
+}
+
+.xxxxxxxxx .item-link-img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

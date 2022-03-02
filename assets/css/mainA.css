@@ -1000,6 +1000,12 @@ ul.carousel__slides input {
 .carousel__go-shop-btn:hover.carousel__go-shop-btn::after {
     display: block;
 }
+.slide-image--copyright {
+    position: absolute;
+    font-size: 1.1rem;
+    top: 555px;
+    color: rgba(255, 255, 255, 0.6);
+}
 .carousel-controls {
     position: absolute;
     top: calc(var(--header-height) + 110px);
@@ -1011,12 +1017,7 @@ ul.carousel__slides input {
     color: var(--white-color);
 }
 
-.slide-image--copyright {
-    position: absolute;
-    font-size: 1.1rem;
-    top: 555px;
-    color: rgba(255, 255, 255, 0.6);
-}
+
 .carousel-controls label {
     position: absolute;
     display: none;

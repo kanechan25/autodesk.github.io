@@ -143,55 +143,269 @@
         </div>
 <!-- CONTAINER---------------- -->
         <main class="app__main">
-            <div class="carousel">
+            <div class="carousel-banner">
                 <div class="grid wide">
-                    <div class="carousel__headings">
-                        <div class="carousel-heading" id="carousel-heading-1">
-                            Architecture, Engineering & Construction</div>
-                        <div class="carousel-heading" id="carousel-heading-2">
-                            Product Design & Manufacturing</div>
-                        <div class="carousel-heading" id="carousel-heading-3">
-                            Media & Entertainment</div>
+                    <div class="carousel">
+                        <div class="carousel-headings-wrap">
+                            <ul class="carousel__headings">
+                                <li class="carousel-heading" id="carousel-heading-1">
+                                    Architecture, Engineering & Construction</li>
+                                <li class="carousel-heading" id="carousel-heading-2">
+                                    Product Design & Manufacturing</li>
+                                <li class="carousel-heading" id="carousel-heading-3">
+                                    Media & Entertainment</li>
+                            </ul>
+                        </div>              
+                    
+                        <div class="carousel__toggle">
+                            <div class="carousel-slide aec active">
+                                <div class="slide__text">
+                                    <h1 class="slide__text-line">Design it.</h1>
+                                    <h1 class="slide__text-line">Build it.</h1>
+                                    <h1 class="slide__text-line">Autodesk it.</h1>
+                                </div>
+                                <!-- <img class="slide__img" src="./assets/img/2. body_carousel/aec-factoryos-hero-banner-2000x1200.jpg"> -->
+                                <p class="slide__copyright">Image courtesy of Factory_OS</p>
+                            </div>
+                    
+                            <div class="carousel-slide pdm">
+                                <div class="slide__text">
+                                    <h1 class="slide__text-line">Innovate it.</h1>
+                                    <h1 class="slide__text-line">Manufacture it.</h1>
+                                    <h1 class="slide__text-line">Autodesk it.</h1>
+                                </div>
+                                <!-- <img class="slide__img" src="./assets/img/2. body_carousel/pdm-hyundai-hero-banner-2000x1200.jpg"> -->
+                                <p class="slide__copyright">Image courtesy of Huyndai Motor Group</p>
+                            </div>
+                    
+                            <div class="carousel-slide me">
+                                <div class="slide__text">
+                                    <h1 class="slide__text-line">Animate it.</h1>
+                                    <h1 class="slide__text-line">Render it.</h1>
+                                    <h1 class="slide__text-line">Autodesk it.</h1>
+                                </div>
+                                <!-- <img class="slide__img" src="./assets/img/2. body_carousel/me-laika-hero-banner-2000x1200.jpg"> -->
+                                <p class="slide__copyright">Image courtesy of LAIKA</p>
+                            </div>
+                    
+                            <a class="carousel-slide go-shop" target="_blank" href="https://www.autodesk.com/products">Shop all products</a>
+                    
+                        </div>
+                    
+                        <div class="carousel-controls col">
+                            <button class="prev-slide control-btn">
+                                <span class="control-btn-icon">&lsaquo;</span>
+                            </button>
+                            <button class="next-slide control-btn">
+                                <span class="control-btn-icon">&rsaquo;</span>
+                            </button>
+                        </div>
+                    
+
                     </div>
                 </div>
 
-                <div class="grid wide">
-                    <div class="carousel__toggle col">
-                        <div class="carousel-slide aec ">
-                            <div class="slide__text">
-                                <h1 class="slide__text-line">Design it.</h1>
-                                <h1 class="slide__text-line">Build it.</h1>
-                                <h1 class="slide__text-line">Autodesk it.</h1>
-                            </div>
-                            <img class="slide__img" src="./assets/img/2. body_carousel/aec-factoryos-hero-banner-2000x1200.jpg">
-                            <p class="slide__copyright">Image courtesy of Factory_OS</p>
-                        </div>
-
-                        <div class="carousel-slide pdm active">
-                            <div class="slide__text">
-                                <h1 class="slide__text-line">Innovate it.</h1>
-                                <h1 class="slide__text-line">Manufacture it.</h1>
-                                <h1 class="slide__text-line">Autodesk it.</h1>
-                            </div>
-                            <img class="slide__img" src="./assets/img/2. body_carousel/pdm-hyundai-hero-banner-2000x1200.jpg">
-                            <p class="slide__copyright">Image courtesy of Huyndai Motor Group</p>
-                        </div>
-
-                        <div class="carousel-slide me">
-                            <div class="slide__text">
-                                <h1 class="slide__text-line">Animate it.</h1>
-                                <h1 class="slide__text-line">Render it.</h1>
-                                <h1 class="slide__text-line">Autodesk it.</h1>
-                            </div>
-                            <img class="slide__img" src="./assets/img/2. body_carousel/me-laika-hero-banner-2000x1200.jpg">
-                            <p class="slide__copyright">Image courtesy of LAIKA</p>
-                        </div>
-
-                        <a class="carousel-slide go-shop" target="_blank" href="https://www.autodesk.com/products">Shop all products</a>
-
+                <div class="carousel-controls-half">
+                    <div class="carousel-controls col">
+                        <button class="prev-slide control-half-btn">
+                            <span class="prev-btn-icon">&lsaquo;</span>
+                        </button>
+                        <button class="next-slide control-half-btn">
+                            <span class="next-btn-icon">&rsaquo;</span>
+                        </button>
                     </div>
                 </div>
+
             </div>
+            <section class="carousel-core">
+                <div class="carousel-core-react grid wide">
+                    <div class="core-react" id="carousel-core-react-aec">
+                        <div class="row">
+                            <div class="col xl-4 lg-4 l-6 m-12 c-12">
+                                <div class="core-react__item">
+                                    <a class="core-react__link" target="_blank" 
+                                        href="https://www.autodesk.com/customer-stories/arcadis-water-system-resilience">
+                                        <div class="item-content">
+                                            <div class="item-content__text">
+                                                <h3 class="item-content__heading-text">Toxic algae fouled the water supply.
+                                                    Arcadis designed a more resilient water system.</h3>
+                                            </div>
+                                            <div class="direction">
+                                                <svg class="direction-icon" style="height: 28px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z" />
+                                                </svg>
+                                                <h4 class="direction-text">Read the story</h4>
+                                            </div>
+                                            <h4 class="item-content__copyright-text">Image courtesy of Arcadis</h4>
+                                        </div>
+                                        <div class="img-wrap">
+                                            <div class="item-img copyright-img">
+                                                <img class="item-link-img"
+                                                    src="./assets/img/2. body_container/AEC/aec-arcadis-thumb-720x480.jpg" alt="AEC-Arcadis">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col xl-4 lg-4 l-6 m-12 c-12">
+                                <div class="core-react__item">
+                                    <a class="core-react__link" target="_blank" 
+                                        href="https://www.autodesk.com/collections/architecture-engineering-construction/overview">
+                                        <div class="item-content">
+                                            <div class="item-content__text">
+                                                <h3 class="item-content__heading-text">Get the essential CAD and BIM design tools in a bundle and save.</h3>
+                                            </div>
+                                            <div class="direction">
+                                                <svg class="direction-icon" style="height: 28px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z" />
+                                                </svg>
+                                                <h4 class="direction-text">See the Architecture, Engineering & Construction Collection.</h4>
+                                            </div>
+                                        </div>
+                                        <div class="img-wrap">
+                                            <div class="item-img copyright-img">
+                                                <img class="item-link-img"
+                                                    src="./assets/img/2. body_container/AEC/aec-collections--thumb-720x480.jpg" alt="AEC-Arcadis">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col xl-4 lg-4 l-6 m-12 c-12">
+                                <div class="core-react__item">
+                                    <a class="core-react__link" target="_blank" 
+                                        href="https://construction.autodesk.com/">
+                                        <div class="item-content">
+                                            <div class="item-content__text">
+                                                <h3 class="item-content__heading-text">Build better with connected construction workflows, teams, and data.</h3>
+                                            </div>
+                                            <div class="direction">
+                                                <svg class="direction-icon" style="height: 28px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z" />
+                                                </svg>
+                                                <h4 class="direction-text">Explore Autodesk Construction Cloud.</h4>
+                                            </div>
+                                        </div>
+                                        <div class="img-wrap">
+                                            <div class="item-img copyright-img">
+                                                <img class="item-link-img"
+                                                    src="./assets/img/2. body_container/AEC/aec-construction-cloud-thumb-720x480.jpg" alt="AEC-Arcadis">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col xl-8 lg-8 l-6 m-12 c-12">
+                                <div class="core-react__item item-aec">
+                                    <a class="core-react__link" target="_blank" 
+                                        href="https://www.autodesk.com/industry#architecture-engineering-and-construction">
+                                        <div class="item-content">
+                                            <div class="item-content__text">
+                                                <h3 class="item-content__heading-text">Find solutions for architecture, engineering, and construction.</h3>
+                                            </div>
+                                            <div class="direction">
+                                                <svg class="direction-icon" style="height: 28px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z" />
+                                                </svg>
+                                                <h4 class="direction-text">Explore tools and technologies</h4>
+                                            </div>
+                                        </div>
+                                        <div class="img-wrap">
+                                            <div class="item-img copyright-img">
+                                                <img class="item-link-img"
+                                                    src="./assets/img/2. body_container/AEC/aec-industry-solutions-thumb-720x480.jpg" alt="AEC-Arcadis">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col xl-4 lg-4 l-12 m-12 c-12">
+                                <div class="core-react__item item-aec-buy">
+                                    <a class="core-react__link" target="_blank" href="https://www.autodesk.com/benefits/overview">
+                                        <div class="item-content">
+                                            <div class="item-content__text">
+                                                <h3 class="item-content__heading-text">Why buy with Autodesk?</h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="item-content__buy col xl-12 lg-12 l-4 m-12 c-12">
+                                                    <img class="item-content__img-buy"
+                                                        src="./assets/img/2. body_container/banner-carlendar.png" alt="AEC-calendar">
+                                                    <h4 class="item-content__buy-text">Subscribe for 3 years, and save</h4>
+                                                </div>
+                                                <div class="item-content__buy col xl-12 lg-12 l-4 m-12 c-12">
+                                                    <img class="item-content__img-buy"
+                                                        src="./assets/img/2. body_container/banner-clock.png" alt="AEC-calendar">
+                                                    <h4 class="item-content__buy-text">Pay as you go with Flex for occasional
+                                                        product use</h4>
+                                                </div>
+                                                <div class="item-content__buy col xl-12 lg-12 l-4 m-12 c-12">
+                                                    <img class="item-content__img-buy"
+                                                        src="./assets/img/2. body_container/banner-guarantee.png" alt="AEC-calendar">
+                                                    <h4 class="item-content__buy-text">Enjoy a 30-day money-back guarantee</h4>
+                                                </div>
+                                            </div>
+                                            <div class="direction">
+                                                <svg class="direction-icon" style="height: 28px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z" />
+                                                </svg>
+                                                <h4 class="direction-text">See more reasons to buy with Autodesk</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-xfpage">
+                <div class="xfpage">
+                    <div class="grid wide row">
+                        <div class="xfpage-item">
+                            <div class="xfpage-item--text">
+                                <h2 class="xfpage-item--heading-text">The future of work is &#x28still&#x29 human</h2>
+                                <h4 class="xfpage-item--content-text">Automation and artificial intelligence are changing the nature of work. Future-proof your workforce and your career with insights, technology, and training from Autodesk.</h4>
+                            </div>
+                            <div class="xfpage-item--direction">
+                                <a class="direction" target="_blank" href="https://www.autodesk.com/future-of-work/get-started">
+                                    <svg class="direction-icon" style="height: 28px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z" />
+                                    </svg>
+                                    <h4 class="direction-text">Get started</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </section>
+
+            <section class="main-items">
+                <div class=" grid wide xxxxxxxxx">
+                    <div class="core-react__item">
+                        <a class="core-react__link" target="_blank" 
+                            href="https://www.autodesk.com/customer-stories/arcadis-water-system-resilience">
+                            <div class="item-content">
+                                <div class="item-content__text">
+                                    <h3 class="item-content__heading-text">Toxic algae fouled the water supply.
+                                        Arcadis designed a more resilient water system.</h3>
+                                </div>
+                                <div class="direction">
+                                    <svg class="direction-icon" style="height: 28px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z" />
+                                    </svg>
+                                    <h4 class="direction-text">Read the story</h4>
+                                </div>
+                                <h4 class="item-content__copyright-text">Image courtesy of Arcadis</h4>
+                            </div>
+                            <div class="item-img copyright-img">
+                                <img class="item-link-img"
+                                    src="./assets/img/2. body_container/AEC/aec-arcadis-thumb-720x480.jpg" alt="AEC-Arcadis">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </main>
 
 <!-- FOOTER------------------- -->
