@@ -14,19 +14,408 @@
 </head>
 <body>
     <div class="app">
+        <div class="overlay activeee"></div>
+        <div class="mobile-navbar-wrap activeee">
+            <div class="mobile-navbar">
+                <div class="mn__top-container">
+                    <button class="mn__btn-nav">
+                        <svg class="btn-close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path fill="#4d4d4d" d="M16 .9l-.8-.9L8 7.2.8 0 0 .9 7.2 8 0 15.1l.8.9L8 8.8l7.2 7.2.8-.9L8.8 8z"></path>
+                        </svg>
+                    </button>
+                    <div class="mn__separator"></div>
+                    <a href="https://www.autodesk.com" target="_self" title="Autodesk">
+                        <svg class="mn__autodesk-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1619.27 166.13">
+                            <path class="autodesk-logo-new" fill="#000"
+                            d="M1619.27 4.34h-47.94l-57.42 64.12V4.34h-40.25l.2 157.84h40.05V102.2l54.46 59.98h50.9l-73.39-77.93 73.39-79.91zm-210.51 64.91l-36.7-4.14c-21.51-2.37-26.83-7.7-26.83-15 0-8.09 11.05-15.39 32.55-15.39 20.72 0 31.57 7.7 33.54 19.34h39.46c-2-33.35-30-54.06-70.83-54.06-48.53 0-73 19.33-73 53.46 0 27.82 16.18 40.85 49.72 44.4l37.29 3.94c14.21 1.58 20.72 7.11 20.72 14.21 0 8.09-9.47 15.39-32.36 15.39-26.44 0-37.09-6.71-38.87-20.13h-38.67c1.78 36.31 25.45 54.85 76.16 54.85 46.36 0 72.21-20.32 72.21-50.9 0-26.64-15.39-42.62-44.39-45.97zm-248.8 92.93h127.06v-34.13h-86.81V99.44h69.84V65.11h-69.84V38.47h86.81V4.34h-127.06v157.84zm-94.7-157.84h-73.79v157.84h73.79c56.63 0 72.21-21.11 72.21-80.11 0-55.44-14.99-77.73-72.21-77.73zm-1.62 123.72h-32V38.47h32c25.26 0 32.75 6.91 32.75 43.6.04 33.54-8.44 45.99-32.75 45.99zM882.17 0c-57.42 0-87.21 35.31-87.21 82.86 0 47.75 29.79 83.26 87.21 83.26 57.61 0 87.4-35.51 87.4-83.26 0-47.55-29.79-82.86-87.4-82.86zm0 130.61c-29.79 0-46.17-18.15-46.17-47.75 0-29 16.38-47.35 46.17-47.35 30 0 46.17 18.35 46.17 47.35 0 29.6-16.18 47.75-46.17 47.75zM646.59 38.47h50.9v123.71h40.25V38.47h50.71V4.34H646.59v34.13zM588 101.8c0 20.52-12.63 28.81-34.14 28.81-20.91 0-34.52-8.68-34.52-28.81V4.34h-40.25v102c0 45.58 40.64 59.78 74.77 59.78 33.94 0 74.38-14.2 74.38-59.78v-102H588zM361.3 4.34l-60.57 157.84h41.63l10.57-29.6h67.62l10.4 29.6h43L412.64 4.34zm3.61 94.7l22.11-61.87 21.74 61.89zM1.24 162.19l141.34-87.92h73.32a4.28 4.28 0 014.28 4.29 3.72 3.72 0 01-2 3.6l-69.42 41.62c-4.51 2.7-6.09 8.12-6.09 12.18l-.07 26.23h88.22V9.75a5.41 5.41 0 00-5.64-5.42H141L0 91.87v70.32z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="mn__main-container">
+                    <div class="mn__main-component">
+                        <ul id="mn__mobile-ul" class="mn__main-component-ul level-00 ">
+                            <li class="item-mobile-level-0 false" id="item-mobile-0" >
+                                <button class="mn__title-clickable btn-clickable" label="Products" >
+                                    <div class="mobile-title level-0">Products</div>
+                                    <svg class="mobile-caret-icon" width="9" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                                        <path d="M8.001 6.25l-3.5 3.5-3.5-3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button></li>
+                            <li class="item-mobile-level-0 false" id="item-mobile-1" >
+                                <button class="mn__title-clickable btn-clickable" label="Support" >
+                                    <div class="mobile-title level-0">Support</div>
+                                    <svg class="mobile-caret-icon" width="9" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                                        <path d="M8.001 6.25l-3.5 3.5-3.5-3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button></li>
+                            <li class="item-mobile-level-0 false" id="item-mobile-2" >
+                                <button class="mn__title-clickable btn-clickable" label="Learn" >
+                                    <div class="mobile-title level-0">Learn</div>
+                                    <svg class="mobile-caret-icon" width="9" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                                        <path d="M8.001 6.25l-3.5 3.5-3.5-3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button></li>
+                            <li class="item-mobile-level-0 false" id="item-mobile-3" >
+                                <button class="mn__title-clickable btn-clickable" label="Community" >
+                                    <div class="mobile-title level-0">Community</div>
+                                    <svg class="mobile-caret-icon" width="9" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                                        <path d="M8.001 6.25l-3.5 3.5-3.5-3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button></li>
+                        </ul>
+                        <ul id="mn__mobile-ul" class="mn__main-component-ul level-1-0">
+                            <li class="mobile-back-icon-container">
+                                <button class="mobile-back-icon-clickable btn-clickable">
+                                    <svg class="mobile-back-icon icon-padding-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" >
+                                        <path d="M16 7.5H1.9L7 2.3l-.8-.8-6 6.1c-.1.1-.2.3-.2.4 0 .1.1.3.2.4l6.1 6.1.7-.8-5.1-5.2H16v-1z" fill="#4d4d4d"></path>
+                                    </svg>
+                                    <div>Back</div>
+                                </button></li>
+                            <li class="mobile-list-title btn-clickable">
+                                <a><div>Products</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-0-0" >
+                                <button class="mn__title-clickable btn-clickable" label="Top products" >
+                                    <div class="mobile-title level-1">Top products</div>
+                                    <svg class="mobile-caret-icon" width="9" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                                        <path d="M8.001 6.25l-3.5 3.5-3.5-3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-0-1" >
+                                <button class="mn__title-clickable btn-clickable" label="Collection" >
+                                    <div class="mobile-title level-1">Collection</div>
+                                    <svg class="mobile-caret-icon" width="9" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                                        <path d="M8.001 6.25l-3.5 3.5-3.5-3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-0-2" >
+                                <button class="mn__title-clickable btn-clickable" label="How to buy" >
+                                    <div class="mobile-title-no-space-betwwen">
+                                        <img class="mobile-title-icon icon-padding-right" src="https://damassets.autodesk.net/content/dam/autodesk/www/universal-header/primary-nav/iconography-cart-light.svg" alt="">
+                                        <div class="mobile-title level-1">How to buy</div>
+                                    </div>
+                                    <svg class="mobile-caret-icon" width="9" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                                        <path d="M8.001 6.25l-3.5 3.5-3.5-3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-0-3" >
+                                <a class="mn__title-clickable btn-clickable" label="Industry solutions" href="https://www.autodesk.com/solutions" target="__blank">
+                                    <div class="mobile-title level-1">Industry solutions</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-0-4" >
+                                <a class="mn__title-clickable btn-clickable" label="Education access" href="https://www.autodesk.com/education/home" target="__blank">
+                                    <div class="mobile-title level-1">Education access</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-0-2">
+                                <a class="mn__title-clickable btn-clickable" label="Start a trial" href="https://www.autodesk.com/free-trials" target="__blank">
+                                    <div class="mobile-title-no-space-betwwen">
+                                        <img class="mobile-title-icon icon-padding-right" src="https://damassets.autodesk.net/content/dam/autodesk/www/universal-header/primary-nav/iconography-download-light.svg" alt="">
+                                        <div class="mobile-title level-1">Start a trial</div>
+                                    </div>
+                                </a> </li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-0-2">
+                                <a class="mn__title-clickable btn-clickable" label="Download your software" href="https://manage.autodesk.com/cep/#products-services/all" target="__blank">
+                                    <div class="mobile-title-no-space-betwwen">
+                                        <img class="mobile-title-icon icon-padding-right" src="https://damassets.autodesk.net/content/dam/autodesk/www/universal-header/primary-nav/iconography-download-light.svg" alt="">
+                                        <div class="mobile-title level-1">Download your software</div>
+                                    </div>
+                                </a> </li>
+                        </ul>
+                        <ul id="mn__mobile-ul" class="mn__main-component-ul level-1-1">
+                            <li class="mobile-back-icon-container">
+                                <button class="mobile-back-icon-clickable btn-clickable">
+                                    <svg class="mobile-back-icon icon-padding-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" >
+                                        <path d="M16 7.5H1.9L7 2.3l-.8-.8-6 6.1c-.1.1-.2.3-.2.4 0 .1.1.3.2.4l6.1 6.1.7-.8-5.1-5.2H16v-1z" fill="#4d4d4d"></path>
+                                    </svg>
+                                    <div>Back</div>
+                                </button></li>
+                            <li class="mobile-list-title btn-clickable">
+                                <a><div>Support</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-1-0" >
+                                <a class="mn__title-clickable btn-clickable" label="Product support and learning" href="https://knowledge.autodesk.com/support" target="__blank">
+                                    <div class="mobile-title level-1">Product support and learning</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-1-1" >
+                                <a class="mn__title-clickable btn-clickable" label="System requirements" href="https://knowledge.autodesk.com/support/system-requirements" target="__blank">
+                                    <div class="mobile-title level-1">System requirements</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-1-2" >
+                                <button class="mn__title-clickable btn-clickable" label="Download" >
+                                    <div class="mobile-title level-1">Download</div>
+                                    <svg class="mobile-caret-icon" width="9" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                                        <path d="M8.001 6.25l-3.5 3.5-3.5-3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-1-3" >
+                                <a class="mn__title-clickable btn-clickable" label="Installation" href="https://www.autodesk.com/support/download-install" target="__blank">
+                                    <div class="mobile-title level-1">Installation</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-1-4" >
+                                <a class="mn__title-clickable btn-clickable" label="Account management support" href="https://knowledge.autodesk.com/customer-service/account-management" target="__blank">
+                                    <div class="mobile-title level-1">Account management support</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-1-5" >
+                                <a class="mn__title-clickable btn-clickable" label="Education support" href="href="https://www.autodesk.com/education/support"" target="__blank">
+                                    <div class="mobile-title level-1">Education support</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-1-6">
+                                <a class="mn__title-clickable btn-clickable" label="Partner professional services" href="https://servicesmarketplace.autodesk.com/?utm_source=autodesk.com&utm_medium=referral&utm_campaign=uh_nav&utm_term=support" target="__blank">
+                                    <div class="mobile-title-no-space-betwwen">
+                                        <div class="mobile-title level-1">Partner professional services</div>
+                                        <svg class="mobile-external-icon icon-padding-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" >
+                                            <path fill="#4d4d4d" d="M10.9 7.2v3.7H1.1V1.1h3.7V0H.5C.2 0 0 .3 0 .6v10.9c0 .3.2.5.5.5h10.9c.3 0 .5-.2.5-.5V7.2h-1z"></path>
+                                            <path fill="#4d4d4d" d="M6.4 6.4l4.5-4.5v3H12V.6c0-.3-.2-.6-.5-.6H7.2v1.1h3L5.6 5.6l.8.8z"></path>
+                                        </svg>
+                                    </div>
+                                </a> </li>
+                        </ul>
+                        <ul id="mn__mobile-ul" class="mn__main-component-ul level-1-2">
+                            <li class="mobile-back-icon-container">
+                                <button class="mobile-back-icon-clickable btn-clickable">
+                                    <svg class="mobile-back-icon icon-padding-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" >
+                                        <path d="M16 7.5H1.9L7 2.3l-.8-.8-6 6.1c-.1.1-.2.3-.2.4 0 .1.1.3.2.4l6.1 6.1.7-.8-5.1-5.2H16v-1z" fill="#4d4d4d"></path>
+                                    </svg>
+                                    <div>Back</div>
+                                </button></li>
+                            <li class="mobile-list-title btn-clickable">
+                                <a><div>Learn</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-1-0" >
+                                <a class="mn__title-clickable btn-clickable" label="Learning and certification" href="https://www.autodesk.com/certification" target="__blank">
+                                    <div class="mobile-title level-1">Learning and certification</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-1-1" >
+                                <a class="mn__title-clickable btn-clickable" label="Training" href="https://www.autodesk.com/training" target="__blank">
+                                    <div class="mobile-title level-1">Training</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-1-6">
+                                <a class="mn__title-clickable btn-clickable" label="Autodesk University" href="https://www.autodesk.com/autodesk-university/" target="__blank">
+                                    <div class="mobile-title-no-space-betwwen">
+                                        <div class="mobile-title level-1">Autodesk University</div>
+                                        <svg class="mobile-external-icon icon-padding-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" >
+                                            <path fill="#4d4d4d" d="M10.9 7.2v3.7H1.1V1.1h3.7V0H.5C.2 0 0 .3 0 .6v10.9c0 .3.2.5.5.5h10.9c.3 0 .5-.2.5-.5V7.2h-1z"></path>
+                                            <path fill="#4d4d4d" d="M6.4 6.4l4.5-4.5v3H12V.6c0-.3-.2-.6-.5-.6H7.2v1.1h3L5.6 5.6l.8.8z"></path>
+                                        </svg>
+                                    </div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-1-1" >
+                                <a class="mn__title-clickable btn-clickable" label="Conferences and events" href="https://www.autodesk.com/events" target="__blank">
+                                    <div class="mobile-title level-1">Conferences and events</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-1-6">
+                                <a class="mn__title-clickable btn-clickable" label="Autodesk Customer Success" href="https://customersuccess.autodesk.com/" target="__blank">
+                                    <div class="mobile-title-no-space-betwwen">
+                                        <div class="mobile-title level-1">Autodesk Customer Success</div>
+                                        <svg class="mobile-external-icon icon-padding-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" >
+                                            <path fill="#4d4d4d" d="M10.9 7.2v3.7H1.1V1.1h3.7V0H.5C.2 0 0 .3 0 .6v10.9c0 .3.2.5.5.5h10.9c.3 0 .5-.2.5-.5V7.2h-1z"></path>
+                                            <path fill="#4d4d4d" d="M6.4 6.4l4.5-4.5v3H12V.6c0-.3-.2-.6-.5-.6H7.2v1.1h3L5.6 5.6l.8.8z"></path>
+                                        </svg>
+                                    </div>
+                                </a></li>
+                        </ul>
+                        <ul id="mn__mobile-ul" class="mn__main-component-ul level-1-3">
+                            <li class="mobile-back-icon-container">
+                                <button class="mobile-back-icon-clickable btn-clickable">
+                                    <svg class="mobile-back-icon icon-padding-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" >
+                                        <path d="M16 7.5H1.9L7 2.3l-.8-.8-6 6.1c-.1.1-.2.3-.2.4 0 .1.1.3.2.4l6.1 6.1.7-.8-5.1-5.2H16v-1z" fill="#4d4d4d"></path>
+                                    </svg>
+                                    <div>Back</div>
+                                </button></li>
+                            <li class="mobile-list-title btn-clickable">
+                                <a><div>Community</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-1-0" >
+                                <a class="mn__title-clickable btn-clickable" label="Forums" href="https://www.autodesk.com/" target="__blank">
+                                    <div class="mobile-title level-1">Forums</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-1-1" >
+                                <a class="mn__title-clickable btn-clickable" label="Groups" href="https://www.autodesk.com/training" target="__blank">
+                                    <div class="mobile-title level-1">Groups</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-1-1" >
+                                <a class="mn__title-clickable btn-clickable" label="Blogs" href="https://www.autodesk.com/blogs" target="__blank">
+                                    <div class="mobile-title level-1">Blogs</div>
+                                </a></li>
+                            <li class="item-mobile-level-1 false" id="item-mobile-1-6">
+                                <a class="mn__title-clickable btn-clickable" label="Developer Network" href="https://www.autodesk.com/developer-network/overview" target="__blank">
+                                    <div class="mobile-title-no-space-betwwen">
+                                        <div class="mobile-title level-1">Developer Network</div>
+                                        <svg class="mobile-external-icon icon-padding-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" >
+                                            <path fill="#4d4d4d" d="M10.9 7.2v3.7H1.1V1.1h3.7V0H.5C.2 0 0 .3 0 .6v10.9c0 .3.2.5.5.5h10.9c.3 0 .5-.2.5-.5V7.2h-1z"></path>
+                                            <path fill="#4d4d4d" d="M6.4 6.4l4.5-4.5v3H12V.6c0-.3-.2-.6-.5-.6H7.2v1.1h3L5.6 5.6l.8.8z"></path>
+                                        </svg>
+                                    </div>
+                                </a></li>
+                        </ul>
+                        <ul id="mn__mobile-ul" class="mn__main-component-ul level-2-0-0 active">
+                            <li class="mobile-back-icon-container">
+                                <button class="mobile-back-icon-clickable btn-clickable">
+                                    <svg class="mobile-back-icon icon-padding-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" >
+                                        <path d="M16 7.5H1.9L7 2.3l-.8-.8-6 6.1c-.1.1-.2.3-.2.4 0 .1.1.3.2.4l6.1 6.1.7-.8-5.1-5.2H16v-1z" fill="#4d4d4d"></path>
+                                    </svg>
+                                    <div>Back</div>
+                                </button></li>
+                            <li class="mobile-list-title btn-clickable">
+                                <a><div>Top Product</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-0-13" >
+                                <a class="mn__title-clickable btn-clickable" label="Revit" href="https://www.autodesk.com/products" target="__blank">
+                                    <div class="mobile-title level-2">View all products</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-0-14" >
+                                <a class="mn__title-clickable btn-clickable" label="Civil 3D" href="https://www.autodesk.com/mobile-apps" target="__blank">
+                                    <div class="mobile-title level-2">View Mobile Apps</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-0-0" >
+                                <a class="mn__title-clickable btn-clickable" label="AutoCAD" href="" >
+                                    <div class="mobile-title level-2">AutoCAD</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-0-1" >
+                                <a class="mn__title-clickable btn-clickable" label="Revit" href="" >
+                                    <div class="mobile-title level-2">Revit</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-0-2" >
+                                <a class="mn__title-clickable btn-clickable" label="Civil 3D" href="" >
+                                    <div class="mobile-title level-2">Civil 3D</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-0-3" >
+                                <a class="mn__title-clickable btn-clickable" label="AutoCAD" href="" >
+                                    <div class="mobile-title level-2">AutoCAD LT</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-0-4" >
+                                <a class="mn__title-clickable btn-clickable" label="Revit" href="" >
+                                    <div class="mobile-title level-2">BIM Collaborate Pro</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-0-5" >
+                                <a class="mn__title-clickable btn-clickable" label="Civil 3D" href="" >
+                                    <div class="mobile-title level-2">Inventor</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-0-6" >
+                                <a class="mn__title-clickable btn-clickable" label="AutoCAD" href="" >
+                                    <div class="mobile-title level-2">Fusion 360</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-0-7" >
+                                <a class="mn__title-clickable btn-clickable" label="Revit" href="" >
+                                    <div class="mobile-title level-2">Navisworks</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-0-8" >
+                                <a class="mn__title-clickable btn-clickable" label="Civil 3D" href="" >
+                                    <div class="mobile-title level-2">3ds Max</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-0-9" >
+                                <a class="mn__title-clickable btn-clickable" label="AutoCAD" href="" >
+                                    <div class="mobile-title level-2">Maya</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-0-10" >
+                                <a class="mn__title-clickable btn-clickable" label="Revit" href="" >
+                                    <div class="mobile-title level-2">Arnold</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-0-11" >
+                                <a class="mn__title-clickable btn-clickable" label="Civil 3D" href="" >
+                                    <div class="mobile-title level-2">Mudbox</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-0-12" >
+                                <a class="mn__title-clickable btn-clickable" label="AutoCAD" href="" >
+                                    <div class="mobile-title level-2">ShotGrid</div>
+                                </a></li>
+                        </ul>
+                        <ul id="mn__mobile-ul" class="mn__main-component-ul level-2-0-1">
+                            <li class="mobile-back-icon-container">
+                                <button class="mobile-back-icon-clickable btn-clickable">
+                                    <svg class="mobile-back-icon icon-padding-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" >
+                                        <path d="M16 7.5H1.9L7 2.3l-.8-.8-6 6.1c-.1.1-.2.3-.2.4 0 .1.1.3.2.4l6.1 6.1.7-.8-5.1-5.2H16v-1z" fill="#4d4d4d"></path>
+                                    </svg>
+                                    <div>Back</div>
+                                </button></li>
+                            <li class="mobile-list-title btn-clickable">
+                                <a><div>Collections</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-1-0" >
+                                <a class="mn__title-clickable btn-clickable" label="Architecture, Engineering & Construction" href="" >
+                                    <div class="mobile-title level-2">Architecture, Engineering & Construction</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-1-1" >
+                                <a class="mn__title-clickable btn-clickable" label="Product Design & Manufacturing" href="" >
+                                    <div class="mobile-title level-2">Product Design & Manufacturing</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-1-2" >
+                                <a class="mn__title-clickable btn-clickable" label="Media & Entertainment" href="" >
+                                    <div class="mobile-title level-2">Media & Entertainment</div>
+                                </a></li>
+                        </ul>
+                        <ul id="mn__mobile-ul" class="mn__main-component-ul level-2-0-2">
+                            <li class="mobile-back-icon-container">
+                                <button class="mobile-back-icon-clickable btn-clickable">
+                                    <svg class="mobile-back-icon icon-padding-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" >
+                                        <path d="M16 7.5H1.9L7 2.3l-.8-.8-6 6.1c-.1.1-.2.3-.2.4 0 .1.1.3.2.4l6.1 6.1.7-.8-5.1-5.2H16v-1z" fill="#4d4d4d"></path>
+                                    </svg>
+                                    <div>Back</div>
+                                </button></li>
+                            <li class="mobile-list-title btn-clickable">
+                                <a><div>How to buy</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-2-0" >
+                                <a class="mn__title-clickable btn-clickable" label="Choose your plan" href="" >
+                                    <div class="mobile-title level-2">Choose your plan</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-2-1" >
+                                <a class="mn__title-clickable btn-clickable" label="Buying with Autodesk" href="" >
+                                    <div class="mobile-title level-2">Buying with Autodesk</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-2-2" >
+                                <a class="mn__title-clickable btn-clickable" label="Special offers" href="" >
+                                    <div class="mobile-title level-2">Special offers</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-0-2-3" >
+                                <a class="mn__title-clickable btn-clickable" label="Purchase by phone 1-855-664-9297" href="" >
+                                    <div class="mobile-title level-2">Purchase by phone 1-855-664-9297</div>
+                                </a></li>
+                        </ul>
+                        <ul id="mn__mobile-ul" class="mn__main-component-ul level-2-1-2">
+                            <li class="mobile-back-icon-container">
+                                <button class="mobile-back-icon-clickable btn-clickable">
+                                    <svg class="mobile-back-icon icon-padding-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" >
+                                        <path d="M16 7.5H1.9L7 2.3l-.8-.8-6 6.1c-.1.1-.2.3-.2.4 0 .1.1.3.2.4l6.1 6.1.7-.8-5.1-5.2H16v-1z" fill="#4d4d4d"></path>
+                                    </svg>
+                                    <div>Back</div>
+                                </button></li>
+                            <li class="mobile-list-title btn-clickable">
+                                <a><div>Downloads</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-1-2-0" >
+                                <a class="mn__title-clickable btn-clickable" label="Download your software" href="" >
+                                    <div class="mobile-title level-2">Download your software</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-1-2-1" >
+                                <a class="mn__title-clickable btn-clickable" label="Updates" href="" >
+                                    <div class="mobile-title level-2">Updates</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-1-2-2" >
+                                <a class="mn__title-clickable btn-clickable" label="Security fixes, hotfixes, and supporting downloads" href="" >
+                                    <div class="mobile-title level-2">Security fixes, hotfixes, and supporting downloads</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-1-2-3" >
+                                <a class="mn__title-clickable btn-clickable" label="File viewers" href="" >
+                                    <div class="mobile-title level-2">File viewers</div>
+                                </a></li>
+                            <li class="item-mobile-level-2 false" id="item-mobile-1-2-4" >
+                                <a class="mn__title-clickable btn-clickable" label="Students and educators" href="" >
+                                    <div class="mobile-title level-2">Students and educators</div>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- HEADER-------------------------- -->
         <div class="app__header">
-            <div class="grid wide">
-                <div class="overlay"></div>
+            <div class="grid wide">           
                 <header class="header col">
                     <div class="header__left">
 
                         <div class="header__left-mini-bar">
                             <i class="fas fa-bars"></i>
-                        </div>
-
-                        <div class="mobile-container">
-                            
                         </div>
 
                         <div class="header__left-logo">
@@ -86,6 +475,40 @@
                         </div>
                         <button class="header__right-mini-dot">
                             <i class="fas fa-ellipsis-h"></i>
+                            <div class="right-task-container activeee">
+                                <ul class="right-task">
+                                    <li class="right-task-icon search-wrap">
+                                        <div class="task__search-mini">
+                                            <svg class="header__search-icon right" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                                <path class="header__search-icon-logo" stroke-linecap="round" stroke-width="1.5" d="M15.028 15.334l4.644 4.644m-2.889-8.88a5.99 5.99 0 01-5.991 5.991 5.99 5.99 0 110-11.983 5.99 5.99 0 015.991 5.992z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="right-task-icon cart-wrap">
+                                        <div class="task__cart">
+                                            <a class="right-cart__wrap" target="_blank" href="https://checkout.autodesk.com/en-US?currency=USD">                               
+                                                <svg class="right-cart__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                    <path fill="#000" d="M17.6 14.3H5.9c-.3 0-.5-.2-.6-.5L2.8 1.2H0V0h3.2c.3 0 .5.2.6.5l2.5 12.6 10.8.1 1.7-8.1 1.2.2-1.8 8.5c0 .3-.3.5-.6.5z"></path>
+                                                    <circle cx="7.2" cy="18" r="2" fill="#000"></circle>
+                                                    <circle cx="16.3" cy="18" r="2" fill="#000"></circle>
+                                                </svg> 
+                                                <span class="right-cart__notice">3</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="right-task-icon language-wrap">
+                                        <div class="task__language">
+                                            <div class="right-language__btn">
+                                                <svg class="right-language__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21">
+                                                    <path  fill="#000" d="M12.9.4C11.9.1 11 0 10 0S8.1.1 7.2.4C3 1.6 0 5.5 0 10c0 5.5 4.5 10 10 10s10-4.5 10-10c0-4.5-3-8.3-7.1-9.6zm-11.8 10h3.5c0 1.2.2 2.3.4 3.3H1.9c-.5-1-.7-2.1-.8-3.3zm9.5-5.5V1.1c.6 0 1.1.1 1.7.3.3.5 1 1.7 1.5 3.6l-3.2-.1zM14 6c.2 1 .3 2.1.3 3.4h-3.8V6H14zM9.5 4.9H6.4c.5-1.8 1.2-3 1.5-3.5.5-.1 1.1-.2 1.6-.2v3.7zm0 1.1v3.4H5.7c0-1.3.1-2.4.3-3.4h3.5zM4.6 9.4H1.1c.1-1.2.4-2.4 1-3.4h2.8c-.2 1-.3 2.1-.3 3.4zm1.1 1.1h3.7v3.3H6.1c-.2-1.1-.3-2.1-.4-3.3zm3.8 4.3v4c-.6 0-1.1-.1-1.7-.3-.2-.3-.9-1.7-1.4-3.8l3.1.1zm1.1 0h3.1c-.5 2.1-1.2 3.4-1.4 3.7-.6.1-1.1.2-1.7.3v-4zm0-1.1v-3.3h3.8c-.1 1.2-.2 2.3-.4 3.3h-3.4zm4.8-3.2h3.5c-.1 1.2-.4 2.3-.8 3.3h-3c.1-1 .3-2.1.3-3.3zm0-1.1c0-1.3-.1-2.4-.3-3.4H18c.5 1 .8 2.2.9 3.4h-3.5zM17.3 5h-2.4c-.3-1.3-.7-2.2-1.1-3 1.4.6 2.6 1.7 3.5 3zM6.2 1.9c-.3.8-.7 1.7-1 3H2.8c.8-1.3 2-2.3 3.4-3zM2.5 14.8h2.7c.3 1.4.7 2.5 1.1 3.3-1.6-.7-2.9-1.9-3.8-3.3zm11.2 3.3c.3-.7.7-1.8 1.1-3.2h2.6c-.9 1.4-2.2 2.5-3.7 3.2z"></path>
+                                                </svg>
+                                                <span class="right-language__text">US</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </button>
                         <div class="header__right-account">
                             <button class="right-account__btn">
