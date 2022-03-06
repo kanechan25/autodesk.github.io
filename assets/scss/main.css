@@ -736,12 +736,12 @@ li {
 
 .carousel-banner .carousel-controls-half .control-half-btn .prev-btn-icon {
   font-size: 40px;
-  padding: 0px 0px 4px 6px;
+  padding: 0px 0px 5px 6px;
 }
 
 .carousel-banner .carousel-controls-half .control-half-btn .next-btn-icon {
   font-size: 40px;
-  padding: 0px 0px 4px 14px;
+  padding: 0px 0px 5px 14px;
 }
 
 .carousel {
@@ -894,7 +894,7 @@ li {
 
 .carousel .carousel-controls .control-btn.prev-slide {
   position: relative;
-  right: 70px;
+  right: 80px;
 }
 
 .carousel .carousel-controls .control-btn.next-slide {
