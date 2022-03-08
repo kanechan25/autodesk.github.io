@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHOA | 3D Design, Engineering & Construction Software</title>
+    <link rel="icon" href="./assets/img/1. header_navbar/autodesk-logo.png" sizes="any" type="image/svg+xml"/>
+    
+</head>
+<body>
+    <div class="app">
+<!-- HEADER----------------------------------------------------- -->
+        <div class="app__header">
+            <div class="grid wide">
+                <div class="header__navbar">
+                    <div class="header__navbar-left">
+                        <div class="header__navbar-logo">
+                            <a href="https://www.autodesk.com" target="_blank" title="Autodesk" data-wat-loc="uh top bar" data-wat-val="logo: adsk" data-testid="uh-autodesk-logo-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1619.27 166.13" data-testid="uh-autodesk-logo" class="autodesk-logo">
+                                    <path class="autodesk-logo-new" fill="#fff" d="M1619.27 4.34h-47.94l-57.42 64.12V4.34h-40.25l.2 157.84h40.05V102.2l54.46 59.98h50.9l-73.39-77.93 73.39-79.91zm-210.51 64.91l-36.7-4.14c-21.51-2.37-26.83-7.7-26.83-15 0-8.09 11.05-15.39 32.55-15.39 20.72 0 31.57 7.7 33.54 19.34h39.46c-2-33.35-30-54.06-70.83-54.06-48.53 0-73 19.33-73 53.46 0 27.82 16.18 40.85 49.72 44.4l37.29 3.94c14.21 1.58 20.72 7.11 20.72 14.21 0 8.09-9.47 15.39-32.36 15.39-26.44 0-37.09-6.71-38.87-20.13h-38.67c1.78 36.31 25.45 54.85 76.16 54.85 46.36 0 72.21-20.32 72.21-50.9 0-26.64-15.39-42.62-44.39-45.97zm-248.8 92.93h127.06v-34.13h-86.81V99.44h69.84V65.11h-69.84V38.47h86.81V4.34h-127.06v157.84zm-94.7-157.84h-73.79v157.84h73.79c56.63 0 72.21-21.11 72.21-80.11 0-55.44-14.99-77.73-72.21-77.73zm-1.62 123.72h-32V38.47h32c25.26 0 32.75 6.91 32.75 43.6.04 33.54-8.44 45.99-32.75 45.99zM882.17 0c-57.42 0-87.21 35.31-87.21 82.86 0 47.75 29.79 83.26 87.21 83.26 57.61 0 87.4-35.51 87.4-83.26 0-47.55-29.79-82.86-87.4-82.86zm0 130.61c-29.79 0-46.17-18.15-46.17-47.75 0-29 16.38-47.35 46.17-47.35 30 0 46.17 18.35 46.17 47.35 0 29.6-16.18 47.75-46.17 47.75zM646.59 38.47h50.9v123.71h40.25V38.47h50.71V4.34H646.59v34.13zM588 101.8c0 20.52-12.63 28.81-34.14 28.81-20.91 0-34.52-8.68-34.52-28.81V4.34h-40.25v102c0 45.58 40.64 59.78 74.77 59.78 33.94 0 74.38-14.2 74.38-59.78v-102H588zM361.3 4.34l-60.57 157.84h41.63l10.57-29.6h67.62l10.4 29.6h43L412.64 4.34zm3.61 94.7l22.11-61.87 21.74 61.89zM1.24 162.19l141.34-87.92h73.32a4.28 4.28 0 014.28 4.29 3.72 3.72 0 01-2 3.6l-69.42 41.62c-4.51 2.7-6.09 8.12-6.09 12.18l-.07 26.23h88.22V9.75a5.41 5.41 0 00-5.64-5.42H141L0 91.87v70.32z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="header__search">
+                            <div class="header__search-input-wrap">
+                                <svg class="header__search-icon" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                    <path class="header__search-icon-img" stroke-linecap="round" stroke-width="1.5" d="M15.028 15.334l4.644 4.644m-2.889-8.88a5.99 5.99 0 01-5.991 5.991 5.99 5.99 0 110-11.983 5.99 5.99 0 015.991 5.992z"></path>
+                                </svg>
+                                <input type="text" class="header__search-input">
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Recent searches will appear hereee</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__navbar-right">
+                        <label for="header__cart-check" class="header__navbar-cart">
+                            <input type="checkbox" class="header__cart-icon-check" id="header__cart-check">
+                            <a class="header__navbar-cart-wrap" target="_blank" href="https://checkout.autodesk.com/en-US?currency=USD">                               
+                                <svg class="header__cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" data-testid="uh-cart-icon">
+                                    <path d="M17.6 14.3H5.9c-.3 0-.5-.2-.6-.5L2.8 1.2H0V0h3.2c.3 0 .5.2.6.5l2.5 12.6 10.8.1 1.7-8.1 1.2.2-1.8 8.5c0 .3-.3.5-.6.5z" fill="#fff"></path>
+                                    <circle cx="7.2" cy="18" r="2" fill="#fff"></circle>
+                                    <circle cx="16.3" cy="18" r="2" fill="#fff"></circle>
+                                </svg> 
+                                <span class="header__cart-notice">3</span>
+                            </a>
+                        </label>
+                        <div class="header__navbar-language">
+                            <button class="header__navbar-language-btn">
+                                <svg class="header__navbar-language-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" id="language-selector-icon" data-testid="language-selector-icon">
+                                    <path  fill="#fff" d="M12.9.4C11.9.1 11 0 10 0S8.1.1 7.2.4C3 1.6 0 5.5 0 10c0 5.5 4.5 10 10 10s10-4.5 10-10c0-4.5-3-8.3-7.1-9.6zm-11.8 10h3.5c0 1.2.2 2.3.4 3.3H1.9c-.5-1-.7-2.1-.8-3.3zm9.5-5.5V1.1c.6 0 1.1.1 1.7.3.3.5 1 1.7 1.5 3.6l-3.2-.1zM14 6c.2 1 .3 2.1.3 3.4h-3.8V6H14zM9.5 4.9H6.4c.5-1.8 1.2-3 1.5-3.5.5-.1 1.1-.2 1.6-.2v3.7zm0 1.1v3.4H5.7c0-1.3.1-2.4.3-3.4h3.5zM4.6 9.4H1.1c.1-1.2.4-2.4 1-3.4h2.8c-.2 1-.3 2.1-.3 3.4zm1.1 1.1h3.7v3.3H6.1c-.2-1.1-.3-2.1-.4-3.3zm3.8 4.3v4c-.6 0-1.1-.1-1.7-.3-.2-.3-.9-1.7-1.4-3.8l3.1.1zm1.1 0h3.1c-.5 2.1-1.2 3.4-1.4 3.7-.6.1-1.1.2-1.7.3v-4zm0-1.1v-3.3h3.8c-.1 1.2-.2 2.3-.4 3.3h-3.4zm4.8-3.2h3.5c-.1 1.2-.4 2.3-.8 3.3h-3c.1-1 .3-2.1.3-3.3zm0-1.1c0-1.3-.1-2.4-.3-3.4H18c.5 1 .8 2.2.9 3.4h-3.5zM17.3 5h-2.4c-.3-1.3-.7-2.2-1.1-3 1.4.6 2.6 1.7 3.5 3zM6.2 1.9c-.3.8-.7 1.7-1 3H2.8c.8-1.3 2-2.3 3.4-3zM2.5 14.8h2.7c.3 1.4.7 2.5 1.1 3.3-1.6-.7-2.9-1.9-3.8-3.3zm11.2 3.3c.3-.7.7-1.8 1.1-3.2h2.6c-.9 1.4-2.2 2.5-3.7 3.2z"></path>
+                                </svg>
+                                <div class="header__navbar-language-text">US</div>
+                            </button>
+                            <div class="header__navbar-language-list">
+                                <div class="header__navbar-language-selector">
+                                    <ul class="header__navbar-language-selector-container" aria-label="all languages">
+                                        <li class="header__navbar-language-selector-item" data-locale="en-AU" data-testid="header__navbar-language-selector-li-en-AU">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-en-AU">
+                                                <div>Australia</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="nl-BE" data-testid="header__navbar-language-selector-li-nl-BE">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-nl-BE">
+                                                <div>België</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="fr-BE" data-testid="header__navbar-language-selector-li-fr-BE">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-fr-BE">
+                                                <div>Belgique</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="pt-BR" data-testid="header__navbar-language-selector-li-pt-BR">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-pt-BR">
+                                                <div>Brasil</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="en-CA" data-testid="header__navbar-language-selector-li-en-CA">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-en-CA">
+                                                <div>Canada (English)</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="fr-CA" data-testid="header__navbar-language-selector-li-fr-CA">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-fr-CA">
+                                                <div>Canada (Français)</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="cs-CZ" data-testid="header__navbar-language-selector-li-cs-CZ">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-cs-CZ">
+                                                <div>Česko</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="da-DK" data-testid="header__navbar-language-selector-li-da-DK">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-da-DK">
+                                                <div>Danmark</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="de-DE" data-testid="header__navbar-language-selector-li-de-DE">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-de-DE">
+                                                <div>Deutschland</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="es-ES" data-testid="header__navbar-language-selector-li-es-ES">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-es-ES">
+                                                <div>España</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="en-NL" data-testid="header__navbar-language-selector-li-en-NL">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-en-NL">
+                                                <div>Europe (English)</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="fr-FR" data-testid="header__navbar-language-selector-li-fr-FR">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-fr-FR">
+                                                <div>France</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="en-HK" data-testid="header__navbar-language-selector-li-en-HK">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-en-HK">
+                                                <div>Hong Kong (English)</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="en-IN" data-testid="header__navbar-language-selector-li-en-IN">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-en-IN">
+                                                <div>India (English)</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="it-IT" data-testid="header__navbar-language-selector-li-it-IT">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-it-IT">
+                                                <div>Italia</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="es-AR" data-testid="header__navbar-language-selector-li-es-AR">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-es-AR">
+                                                <div>Latinoamérica</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="hu-HU" data-testid="header__navbar-language-selector-li-hu-HU">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-hu-HU">
+                                                <div>Magyarország</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="en-MY" data-testid="header__navbar-language-selector-li-en-MY">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-en-MY">
+                                                <div>Malaysia (English)</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="es-MX" data-testid="header__navbar-language-selector-li-es-MX">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-es-MX">
+                                                <div>México</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="en-AE" data-testid="header__navbar-language-selector-li-en-AE">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-en-AE">
+                                                <div>Middle East (English)</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="nl-NL" data-testid="header__navbar-language-selector-li-nl-NL">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-nl-NL">
+                                                <div>Nederland</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="en-NZ" data-testid="header__navbar-language-selector-li-en-NZ">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-en-NZ">
+                                                <div>New Zealand</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="no-NO" data-testid="header__navbar-language-selector-li-no-NO">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-no-NO">
+                                                <div>Norge</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="de-AT" data-testid="header__navbar-language-selector-li-de-AT">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-de-AT">
+                                                <div>Österreich</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="pl-PL" data-testid="header__navbar-language-selector-li-pl-PL">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-pl-PL">
+                                                <div>Polska</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="pt-PT" data-testid="header__navbar-language-selector-li-pt-PT">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-pt-PT">
+                                                <div>Portugal</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="en-SG" data-testid="header__navbar-language-selector-li-en-SG">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-en-SG">
+                                                <div>Singapore (English)</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="fi-FI" data-testid="header__navbar-language-selector-li-fi-FI">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-fi-FI">
+                                                <div>Suomi</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="sv-SE" data-testid="header__navbar-language-selector-li-sv-SE">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-sv-SE">
+                                                <div>Sverige</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="de-CH" data-testid="header__navbar-language-selector-li-de-CH">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-de-CH">
+                                                <div>Schweiz</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="en-ZA" data-testid="header__navbar-language-selector-li-en-ZA">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-en-ZA">
+                                                <div>South Africa (English)</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="fr-CH" data-testid="header__navbar-language-selector-li-fr-CH">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-fr-CH">
+                                                <div>Suisse</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="it-CH" data-testid="header__navbar-language-selector-li-it-CH">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-it-CH">
+                                                <div>Svizzera</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="tr-TR" data-testid="header__navbar-language-selector-li-tr-TR">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-tr-TR">
+                                                <div>Türkiye</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="en-GB" data-testid="header__navbar-language-selector-li-en-GB">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-en-GB">
+                                                <div>United Kingdom</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item language-selected" data-locale="en-US"
+                                            data-testid="header__navbar-language-selector-li-en-US">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-en-US" >
+                                                <div>
+                                                    United States
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"
+                                                        class="language-selector__small-checkmark-icon">
+                                                        <path fill="#4D4D4D"
+                                                            d="M3.52 6.15a.65.65 0 01-.43-.17L0 3.11l.86-.93L3.5 4.64 8.1 0l.9.89-5.03 5.07c-.12.13-.28.19-.45.19z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="ru-RU" data-testid="header__navbar-language-selector-li-ru-RU">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-ru-RU">
+                                                <div>Россия</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="zh-CN" data-testid="header__navbar-language-selector-li-zh-CN">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-zh-CN">
+                                                <div>中国大陆地区</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="zh-TW" data-testid="header__navbar-language-selector-li-zh-TW">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-zh-TW">
+                                                <div>台灣</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="ja-JP" data-testid="header__navbar-language-selector-li-ja-JP">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-ja-JP">
+                                                <div>日本</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-language-selector-item" data-locale="ko-KR" data-testid="header__navbar-language-selector-li-ko-KR">
+                                            <a class="header__navbar-language-selector-a" data-testid="header__navbar-language-selector-item-ko-KR">
+                                                <div>한국­</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="header__navbar-account">
+                            <button class="header__navbar-account-btn">
+                                <div class="header__navbar-account-wrap">
+                                    <img class="header__navbar-account-img" src="./assets/img/1. header_navbar/navbar/x40.jpg" alt="">
+                                </div>
+                            </button>
+                            <div class="header__navbar-account--panel-container">
+                                <div class="header__navbar-account--panel-container-inner">
+                                    <div class="header__navbar-account--content">
+                                        <div class="header__navbar-account--content-profile">
+                                            <div class="content-profile__name-box">
+                                                <p class="content-profile__name">TRAN Van Khoa</p>
+                                            </div>
+                                            <div>
+                                                <p class="content-profile__email">kt.itengineer@gmail.com</p>
+                                            </div>
+                                            <div class="content-profile__sign-out">
+                                                <button class="content-profile__sign-out-button">
+                                                    <span class="sign-out-button--label">
+                                                        <p class="sign-out-button--text">Sign out</p>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="header__navbar-account--category-wrapper">
+                                            <a class="header__navbar-account--category-heading">
+                                                <div class="header__navbar-account--category-heading-content">
+                                                    <div class="header__navbar-account--category-heading-icon">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3 19.3245L21 19.3245L21 6.61862L9.35294 6.61862L9.35294 4.50098L3 4.50098L3 19.3245Z"
+                                                                stroke="black" stroke-width="1.5" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="header__navbar-account--category-heading-text">My account</p>
+                                                </div>
+                                            </a>
+                                            <a class="header__navbar-account--category-link">
+                                                <p class="header__navbar-account--category-link-text">Products and services</p>
+                                            </a>
+                                            <a class="header__navbar-account--category-link">
+                                                <p class="header__navbar-account--category-link-text">Product updates</p>
+                                            </a>
+                                            <a class="header__navbar-account--category-link">
+                                                <p class="header__navbar-account--category-link-text">Trials</p>
+                                            </a>
+                                        </div>
+                                        <div class="header__navbar-account--category-wrapper">
+                                            <a class="header__navbar-account--category-heading">
+                                                <div class="header__navbar-account--category-heading-content">
+                                                    <div class="header__navbar-account--category-heading-icon">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M18.87 19.1345C17.6251 16.5976 15.0165 14.8513 12 14.8513C8.9835 14.8513 6.37488 16.5976 5.13 19.1345M14.9 9.33297C14.9 10.9898 13.6016 12.333 12 12.333C10.3984 12.333 9.1 10.9898 9.1 9.33297C9.1 7.67612 10.3984 6.33297 12 6.33297C13.6016 6.33297 14.9 7.67612 14.9 9.33297ZM22 12.001C22 17.5238 17.5228 22.001 12 22.001C6.47715 22.001 2 17.5238 2 12.001C2 6.47813 6.47715 2.00098 12 2.00098C17.5228 2.00098 22 6.47813 22 12.001Z"
+                                                                stroke="black" stroke-width="1.5" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="header__navbar-account--category-heading-text">My profile and settings</p>
+                                                </div>
+                                            </a>
+                                            <a class="header__navbar-account--category-link">
+                                                <p class="header__navbar-account--category-link-text">Password and security</p>
+                                            </a>
+                                            <a class="header__navbar-account--category-link">
+                                                <p class="header__navbar-account--category-link-text">Language</p>
+                                            </a>
+                                            <a class="header__navbar-account--category-link">
+                                                <p class="header__navbar-account--category-link-text">Communications</p>
+                                            </a>
+                                        </div>
+                                        <div class="header__navbar-account--category-wrapper">
+                                            <a class="header__navbar-account--category-heading">
+                                                <div class="header__navbar-account--category-heading-content">
+                                                    <div class="header__navbar-account--category-heading-icon"><svg width="24" height="24" viewBox="0 0 24 24"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M2.5 21.001C2.5 17.6938 4.60793 14.001 9.01396 14.001C13.42 14.001 15.5 17.6938 15.5 21.001M21.5 15.501C21.5 13.67 20.3547 11.4473 18.0395 11.4473C15.7242 11.4473 14.5 13.001 14.5 13.001M12.5 7.50098C12.5 9.43397 10.933 11.001 9 11.001C7.067 11.001 5.5 9.43397 5.5 7.50098C5.5 5.56798 7.067 4.00098 9 4.00098C10.933 4.00098 12.5 5.56798 12.5 7.50098ZM20.0395 7.038C20.0395 8.17709 19.1441 9.1005 18.0395 9.1005C16.9349 9.1005 16.0395 8.17709 16.0395 7.038C16.0395 5.89891 16.9349 4.9755 18.0395 4.9755C19.1441 4.9755 20.0395 5.89891 20.0395 7.038Z"
+                                                                stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="header__navbar-account--category-heading-text">My community</p>
+                                                </div>
+                                            </a>
+                                            <a class="header__navbar-account--category-link">
+                                                <p class="header__navbar-account--category-link-text">Community profile</p>
+                                            </a>
+                                            <a class="header__navbar-account--category-link">
+                                                <p class="header__navbar-account--category-link-text">Contributions</p>
+                                            </a>
+                                            <a class="header__navbar-account--category-link">
+                                                <p class="header__navbar-account--category-link-text">Forum preferences</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__fix">
+                    <ul class="header__fix-component">
+                        <li class="header__fix-btn header__fix-btn--product">
+                            <button class="header__fix-btn-item header__fix-btn--product-item">
+                                Products
+                                <svg  class="header__fix-btn-dropdown" width="9" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" data-testid="caret-icon-uh-pn">
+                                    <path d="M8.001 6.25l-3.5 3.5-3.5-3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                            <div class="header__fix-product-container">
+                                <div class="header__fix-product-panel">
+                                    <div class="header__fix-product-container-fluid">
+                                        <div class="col l-9 header__fix-product--section">
+                                            <div class="header__fix-product--section-products">
+                                                <div class="col l-4 header__fix-product--item-products">
+                                                    <div class="item-products__collection-title">Architecture, Engineering<br> &amp; Construction </div>
+                                                    <a class="item-products__collection-box" href="https://www.autodesk.com/collections/architecture-engineering-construction/overview" target="__blank">
+                                                        <img src="./assets/img/1. header_navbar/fixedbar/architecture-engineering-construction-collection-uhblack-banner-lockup-364x40.png" alt="aec logo">
+                                                        <p>Integrated BIM tools, including Revit, AutoCAD, and Civil 3D</p>
+                                                    </a>
+                                                    <div class="item-products__collection-list">
+                                                        <span>Top products</span>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="https://www.autodesk.com/products/autocad/overview" target="__blank">AutoCAD</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.autodesk.com/products/revit-family/overview" target="__blank">Revit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.autodesk.com/products/civil-3d/overview" target="__blank">Civil 3D</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.autodesk.com/products/autocad-lt/overview" target="__blank">AutoCAD LT</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.autodesk.com/products/bim-collaborate/overview" target="__blank">BIM Collaborate Pro</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-4 header__fix-product--item-products">
+                                                    <div class="item-products__collection-title">Product Design<br>& Manufacturing </div>
+                                                    <a class="item-products__collection-box" href="https://www.autodesk.com/collections/product-design-manufacturing/overview" target="__blank">
+                                                        <img src="./assets/img/1. header_navbar/fixedbar/product-design-manufacturing-collection-uhblack-banner-lockup-364x40.png" alt="pdm logo">
+                                                        <p>Professional CAD/CAM tools built on Inventor and AutoCAD</p>
+                                                    </a>
+                                                    <div class="item-products__collection-list">
+                                                        <span>Top products</span>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="https://www.autodesk.com/products/inventor/overview" target="__blank">Inventor</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.autodesk.com/products/autocad/overview" target="__blank">AutoCAD</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.autodesk.com/products/fusion-360/overview" target="__blank">Fusion 360</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.autodesk.com/products/navisworks/overview" target="__blank">Navisworks</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-4 header__fix-product--item-products">
+                                                    <div class="item-products__collection-title">Media<br>& Entertainment</div>
+                                                    <a class="item-products__collection-box" href="https://www.autodesk.com/collections/media-entertainment/overview" target="__blank">
+                                                        <img src="./assets/img/1. header_navbar/fixedbar/media-entertainment-collection-uhblack-banner-lockup-364x40.png" alt="me logo">
+                                                        <p>Entertainment content creation tools, including 3ds Max and Maya</p>
+                                                    </a>
+                                                    <div class="item-products__collection-list">
+                                                        <span>Top products</span>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="https://www.autodesk.com/products/3ds-max/overview" target="__blank">3ds Max</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.autodesk.com/products/maya/overview" target="__blank">Maya</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.autodesk.com/products/arnold/overview" target="__blank">Arnold</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.autodesk.com/products/mudbox/overview" target="__blank">Mudbox</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.autodesk.com/products/shotgrid/overview" target="__blank">ShotGrid</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="header__fix-product--section-bottom">
+                                                <div class="header__fix-product--section-bottom-link">
+                                                    <div class="col header__fix-product--section-bottom-item">
+                                                        <a class="header__fix-product--section-bottom-item-link" href="https://autodesk.com/products" target="__blank">
+                                                            <span>View all products</span>
+                                                            <span class="header__fix-product--section-bottom-icon-container">
+                                                                <svg class="header__fix-product--section-bottom-icon" fill="none" xmlns="http://www.w3.org/2000/svg" data-testid="caret-icon-uh-pn">
+                                                                    <path d="M8.001 6.25l-3.5 3.5-3.5-3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-3 header__fix-product--links">
+                                            <div class="header__fix-product--block-list">
+                                                <div class="header__fix-product--block-download"> 
+                                                    <a class="header__fix-product--link-block" href="https://www.autodesk.com/free-trials"> 
+                                                        <svg class="header__fix-product--icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path id="stroke" d="M12 17.8235H22V3H2V17.8235H12ZM12 17.8235V21M12 21H17.7895M12 21H6.21053" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                                            </path>
+                                                        </svg>
+                                                        <p>Start a trial</p>
+                                                    </a> 
+                                                    <a class="header__fix-product--link-block" href="https://manage.autodesk.com/cep/#products-services/all"> 
+                                                        <svg class="header__fix-product--icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path id="stroke" d="M22 5.68222L12 1L2 5.68222M22 5.68222V16.6501L12 23M22 5.68222L12 11.3586M12 23L2 16.6501V5.68222M12 23V11.3586M2 5.68222L12 11.3586" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                                            </path>
+                                                        </svg>
+                                                        <p>Download your software</p>
+                                                    </a> 
+                                                    <a class="header__fix-product--link-block" href="https://www.autodesk.com/viewers">
+                                                        <svg class="header__fix-product--icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path id="stroke" d="M11 2C14.7014 2 17.9331 4.01099 19.6622 7M11 2C7.29859 2 4.06687 4.01099 2.33782 7M11 2C11 2 13.248 3.95475 14.7622 7M11 2C11 2 8.75204 3.95475 7.23776 7M11 2V7M19.6622 7C20.513 8.47087 21 10.1786 21 12H16.1045M19.6622 7H14.7622M1 12C1 10.1786 1.48697 8.47087 2.33782 7M1 12C1 13.8214 1.48697 15.5291 2.33782 17M1 12H5.89552M2.33782 7H7.23776M14.7622 7H11M14.7622 7C15.4835 8.45041 16.0383 10.1482 16.1045 12M11 7H7.23776M11 7V12M7.23776 7C6.51653 8.45041 5.96173 10.1482 5.89552 12M11 22C7.29859 22 4.06687 19.989 2.33782 17M11 22C10.2349 21.3347 9.57164 20.6694 9 20.0071C8.12593 18.9943 7.46612 17.9885 6.98425 17M11 22C11.5098 22 12.0107 21.9619 12.5 21.8883M2.33782 17H6.98425M16.1045 12H11M5.89552 12C5.83923 13.5745 6.13613 15.2603 6.98425 17M5.89552 12H11M6.98425 17H9M11 12V13.5M23 17.5C23 17.5 21.1579 21 17.1667 21C13.1754 21 11.3333 17.5 11.3333 17.5C11.3333 17.5 13.1754 14 17.1667 14C21.1579 14 23 17.5 23 17.5ZM18.3333 17.5C18.3333 18.1443 17.811 18.6667 17.1667 18.6667C16.5223 18.6667 16 18.1443 16 17.5C16 16.8557 16.5223 16.3333 17.1667 16.3333C17.811 16.3333 18.3333 16.8557 18.3333 17.5Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                                                            </path>
+                                                        </svg>
+                                                        <p>Download file viewers</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="header__fix-product--block">
+                                                <svg class="header__fix-product--icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path id="stroke" d="M15 15L19.9957 19.9957M16.8923 10.4462C16.8923 14.0063 14.0063 16.8923 10.4462 16.8923C6.88605 16.8923 4 14.0063 4 10.4462C4 6.88605 6.88605 4 10.4462 4C14.0063 4 16.8923 6.88605 16.8923 10.4462Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                                    </path>
+                                                </svg>
+                                                <p>Discover</p>
+                                            </div>
+                                            <div class="header__fix-product--block-list">
+                                                <ul>
+                                                    <li>
+                                                        <a class="header__fix-product--block-list--item" href="https://www.autodesk.com/solutions" target="__blank">
+                                                            Industry solutions
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="header__fix-product--block-list--item" href="https://www.autodesk.com/education/home" target="__blank">
+                                                            Educational access
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="header__fix-product--block buy-list">
+                                                <svg class="header__fix-product--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" data-testid="uh-cart-icon">
+                                                    <path fill="#000" d="M17.6 14.3H5.9c-.3 0-.5-.2-.6-.5L2.8 1.2H0V0h3.2c.3 0 .5.2.6.5l2.5 12.6 10.8.1 1.7-8.1 1.2.2-1.8 8.5c0 .3-.3.5-.6.5z"></path>
+                                                    <circle cx="7.2" cy="18" r="2" fill="#000"></circle>
+                                                    <circle cx="16.3" cy="18" r="2" fill="#000"></circle>
+                                                </svg> 
+                                                <p>How to buy</p>
+                                            </div>
+                                            <div class="header__fix-product--block-list last-list">
+                                                <ul>
+                                                    <li>
+                                                        <a class="header__fix-product--block-list--item" href="https://www.autodesk.com/plans">Choose your plan
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="header__fix-product--block-list--item" href="https://www.autodesk.com/benefits/overview">Buying with Autodesk
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="header__fix-product--block-list--item" href="https://www.autodesk.com/promotions">Special offers
+                                                        </a>
+                                                    </li>
+                                                    <li class="header__fix-product--block-list--last-item">
+                                                        <span>Purchase by phone</span>
+                                                        <a class="header__fix-product--block-list--item" href="tel:18556649297" target="__blank">1-855-664-9297
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__fix-btn header__fix-btn--support">
+                            <button class="header__fix-btn-item header__fix-btn--support-item">
+                                Support
+                                <svg  class="header__fix-btn-dropdown" width="9" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" data-testid="caret-icon-uh-pn">
+                                    <path d="M8.001 6.25l-3.5 3.5-3.5-3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                            <div class="header__fix-support-container">
+                                <div class="header__fix-support-panel">
+                                    <ul class="header__fix-panel-container">
+                                        <li class="header__fix-container--item">
+                                            <a class="header__fix-container--item-clickable" href="https://knowledge.autodesk.com/support" target="__blank">
+                                                <div class="header__fix-container--item-title">Product support and learning</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__fix-container--item">
+                                            <a class="header__fix-container--item-clickable" href="https://knowledge.autodesk.com/support/system-requirements" target="__blank">
+                                                <div class="header__fix-container--item-title">System requirements</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__fix-container--item">
+                                            <button class="header__fix-container--item-clickable clickable-button">
+                                                <div class="header__fix-container--item-title">Downloads</div>
+                                                <svg class="header__fix-btn-dropdown-rotate" width="9" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.001 6.25l-3.5 3.5-3.5-3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="header__fix-container--item">
+                                            <a class="header__fix-container--item-clickable" href="https://www.autodesk.com/support/download-install" target="__blank">
+                                                <div class="header__fix-container--item-title">Installation</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__fix-container--item">
+                                            <a class="header__fix-container--item-clickable" href="https://knowledge.autodesk.com/customer-service/account-management" target="__blank">
+                                                <div class="header__fix-container--item-title">Account management support</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__fix-container--item">
+                                            <a class="header__fix-container--item-clickable" href="https://www.autodesk.com/education/support" target="__blank">
+                                                <div class="header__fix-container--item-title">Educational support</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__fix-container--item">
+                                            <a class="header__fix-container--item-clickable"
+                                                href="https://servicesmarketplace.autodesk.com/?utm_source=autodesk.com&amp;utm_medium=referral&amp;utm_campaign=uh_nav&amp;utm_term=support" target="_blank">
+                                                <div class="header__fix-container--item-title">Partner professional services
+                                                    <svg class="header__fix-container--item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                                                        <path fill="#4d4d4d" d="M10.9 7.2v3.7H1.1V1.1h3.7V0H.5C.2 0 0 .3 0 .6v10.9c0 .3.2.5.5.5h10.9c.3 0 .5-.2.5-.5V7.2h-1z"></path>
+                                                        <path fill="#4d4d4d" d="M6.4 6.4l4.5-4.5v3H12V.6c0-.3-.2-.6-.5-.6H7.2v1.1h3L5.6 5.6l.8.8z"></path>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__fix-btn header__fix-btn--learn">
+                            <button class="header__fix-btn-item header__fix-btn--learn-item">
+                                Learn
+                                <svg  class="header__fix-btn-dropdown" width="9" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" data-testid="caret-icon-uh-pn">
+                                    <path d="M8.001 6.25l-3.5 3.5-3.5-3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                            <div class="header__fix-learn-container">
+                                <div class="header__fix-learn-panel">
+                                    <ul class="header__fix-panel-container">
+                                        <li class="header__fix-container--item">
+                                            <a class="header__fix-container--item-clickable" href="https://www.autodesk.com/certification" target="__blank">
+                                                <div class="header__fix-container--item-title">Learning and certification</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__fix-container--item">
+                                            <a class="header__fix-container--item-clickable" href="https://www.autodesk.com/training" target="__blank">
+                                                <div class="header__fix-container--item-title">Training</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__fix-container--item">
+                                            <a class="header__fix-container--item-clickable" href="https://www.autodesk.com/autodesk-university/" target="_blank">
+                                                <div class="header__fix-container--item-title">Autodesk University
+                                                    <svg class="header__fix-container--item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                                                        <path fill="#4d4d4d" d="M10.9 7.2v3.7H1.1V1.1h3.7V0H.5C.2 0 0 .3 0 .6v10.9c0 .3.2.5.5.5h10.9c.3 0 .5-.2.5-.5V7.2h-1z"></path>
+                                                        <path fill="#4d4d4d" d="M6.4 6.4l4.5-4.5v3H12V.6c0-.3-.2-.6-.5-.6H7.2v1.1h3L5.6 5.6l.8.8z"></path>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__fix-container--item">
+                                            <a class="header__fix-container--item-clickable" href="https://www.autodesk.com/events" target="__blank">
+                                                <div class="header__fix-container--item-title">Conferences and events</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__fix-container--item">
+                                            <a class="header__fix-container--item-clickable" href="https://customersuccess.autodesk.com/" target="_blank">
+                                                <div class="header__fix-container--item-title">Autodesk Customer Success
+                                                    <svg class="header__fix-container--item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                                                        <path fill="#4d4d4d" d="M10.9 7.2v3.7H1.1V1.1h3.7V0H.5C.2 0 0 .3 0 .6v10.9c0 .3.2.5.5.5h10.9c.3 0 .5-.2.5-.5V7.2h-1z"></path>
+                                                        <path fill="#4d4d4d" d="M6.4 6.4l4.5-4.5v3H12V.6c0-.3-.2-.6-.5-.6H7.2v1.1h3L5.6 5.6l.8.8z"></path>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                        </li>
+                        <li class="header__fix-btn header__fix-btn--community">
+                            <button class="header__fix-btn-item header__fix-btn--community-item">
+                                Community
+                                <svg  class="header__fix-btn-dropdown" width="9" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" data-testid="caret-icon-uh-pn">
+                                    <path d="M8.001 6.25l-3.5 3.5-3.5-3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                            <div class="header__fix-community-container">
+                                <div class="header__fix-community-panel">
+                                    <ul class="header__fix-panel-container">
+                                        <li class="header__fix-container--item">
+                                            <a class="header__fix-container--item-clickable" href="https://forums.autodesk.com/" target="__blank">
+                                                <div class="header__fix-container--item-title">Forums</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__fix-container--item">
+                                            <a class="header__fix-container--item-clickable" href="https://knowledge.autodesk.com/community/groups#/overview" target="__blank">
+                                                <div class="header__fix-container--item-title">Groups</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__fix-container--item">
+                                            <a class="header__fix-container--item-clickable" href="https://www.autodesk.com/blogs" target="__blank">
+                                                <div class="header__fix-container--item-title">Blogs</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__fix-container--item">
+                                            <a class="header__fix-container--item-clickable" href="https://www.autodesk.com/developer-network/overview" target="_blank">
+                                                <div class="header__fix-container--item-title">Developer Network
+                                                    <svg class="header__fix-container--item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                                                        <path fill="#4d4d4d" d="M10.9 7.2v3.7H1.1V1.1h3.7V0H.5C.2 0 0 .3 0 .6v10.9c0 .3.2.5.5.5h10.9c.3 0 .5-.2.5-.5V7.2h-1z"></path>
+                                                        <path fill="#4d4d4d" d="M6.4 6.4l4.5-4.5v3H12V.6c0-.3-.2-.6-.5-.6H7.2v1.1h3L5.6 5.6l.8.8z"></path>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<!-- CONTAINER-------------------------------------------------- -->
+        <div class="app__container">
+            <!-- BANNER ------------------ -->
+            <div class="container__banner">
+                <div class="grid wide">                    
+                    <div class="carousel">
+                        <ul class="carousel__slides">
+                            <input type="radio" name="radio-buttons" id="img-1" checked />
+                            <!-- ----Slide AEC ---- -->
+                            <li class="slide-container aec">
+                                <div class="slide-image">
+                                    <div class="slide-image--text">
+                                        <h1 class="slide-image--text-line">Design it.</h1>
+                                        <h1 class="slide-image--text-line">Build it.</h1>
+                                        <h1 class="slide-image--text-line">Autodesk it.</h1>
+                                    </div>
+                                    <img class="slide-image--item" src="./assets/img/2. body_carousel/aec-factoryos-hero-banner-2000x1200.jpg">
+                                    <p class="slide-image--copyright">Image courtesy of Factory_OS</p>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="core__intro">
+                                                <div class="core__intro-item">
+                                                    <a class="core__intro-item-link" target="_blank"
+                                                        href="https://www.autodesk.com/customer-stories/arcadis-water-system-resilience">
+                                                        <div class="core__intro-item-content">
+                                                            <div class="core__intro-item-content--text">
+                                                                <h3 class="core__intro-item-content--heading-text">Toxic algae fouled the water supply.
+                                                                    Arcadis designed a more resilient water system.</h3>
+                                                            </div>
+                                                            <div class="core__intro-item-content--direction">
+                                                                <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 512 512">
+                                                                    <path
+                                                                        d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z" />
+                                                                </svg>
+                                                                <h4 class="core__intro-item-content--direction-text">Read the story</h4>
+                                                            </div>
+                                                            <h4 class="core__intro-item-content--copyright-text">Image courtesy of Arcadis</h4>
+                                                        </div>
+                                                        <div class="core__intro-item-img core__intro-copyright-img">
+                                                            <img class="core__intro-item-link-img"
+                                                                src="./assets/img/2. body_container/AEC/aec-arcadis-thumb-720x480.jpg" alt="AEC-Arcadis">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="core__intro-item">
+                                                    <a class="core__intro-item-link" target="_blank"
+                                                        href="https://www.autodesk.com/collections/architecture-engineering-construction/overview">
+                                                        <div class="core__intro-item-content">
+                                                            <div class="core__intro-item-content--text">
+                                                                <h3 class="core__intro-item-content--heading-text">Get the essential CAD and BIM design
+                                                                    tools in a bundle and save.</h3>
+                                                            </div>
+                                                            <div class="core__intro-item-content--direction">
+                                                                <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 512 512">
+                                                                    <path
+                                                                        d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z" />
+                                                                </svg>
+                                                                <h4 class="core__intro-item-content--direction-text">See the Architecture, Engineering &
+                                                                    Construction Collection</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="core__intro-item-img">
+                                                            <img class="core__intro-item-link-img"
+                                                                src="./assets/img/2. body_container/AEC/aec-collections--thumb-720x480.jpg"
+                                                                alt="AEC-collections">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="core__intro-item">
+                                                    <a class="core__intro-item-link" target="_blank" href="https://construction.autodesk.com/">
+                                                        <div class="core__intro-item-content">
+                                                            <div class="core__intro-item-content--text">
+                                                                <h3 class="core__intro-item-content--heading-text">Build better with connected construction workflows, teams, and data.</h3>
+                                                            </div>
+                                                            <div class="core__intro-item-content--direction">
+                                                                <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 512 512">
+                                                                    <path
+                                                                        d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z" />
+                                                                </svg>
+                                                                <h4 class="core__intro-item-content--direction-text">Explore Autodesk Construction Cloud
+                                                                </h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="core__intro-item-img">
+                                                            <img class="core__intro-item-link-img"
+                                                                src="./assets/img/2. body_container/AEC/aec-construction-cloud-thumb-720x480.jpg"
+                                                                alt="AEC-cloud">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="core__intro-item core__intro-item--aec">
+                                                    <a class="core__intro-item-link" target="_blank"
+                                                        href="https://www.autodesk.com/industry#architecture-engineering-and-construction">
+                                                        <div class="core__intro-item-content">
+                                                            <div class="core__intro-item-content--text">
+                                                                <h3 class="core__intro-item-content--heading-text">Find solutions for architecture,
+                                                                    engineering, and construction</h3>
+                                                            </div>
+                                                            <div class="core__intro-item-content--direction">
+                                                                <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 512 512">
+                                                                    <path
+                                                                        d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z" />
+                                                                </svg>
+                                                                <h4 class="core__intro-item-content--direction-text">Explore tools and technologies</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="core__intro-item-img">
+                                                            <img class="core__intro-item-link-img"
+                                                                src="./assets/img/2. body_container/AEC/aec-industry-solutions-thumb-720x480.jpg"
+                                                                alt="AEC-Arcadis">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="core__intro-item core__intro-item--aec-buy">
+                                                    <a class="core__intro-item-link" target="_blank" href="https://www.autodesk.com/benefits/overview">
+                                                        <div class="core__intro-item-content">
+                                                            <div class="core__intro-item-content--text">
+                                                                <h3 class="core__intro-item-content--heading-text">Why buy with Autodesk?</h3>
+                                                            </div>
+                                                            <div class="core__intro-item-content--buy">
+                                                                <img class="core__intro-item-content--img-buy"
+                                                                    src="./assets/img/2. body_container/banner-carlendar.png" alt="AEC-calendar">
+                                                                <h4 class="core__intro-item-content--buy-text">Subscribe for 3 years, and save</h4>
+                                                            </div>
+                                                            <div class="core__intro-item-content--buy">
+                                                                <img class="core__intro-item-content--img-buy"
+                                                                    src="./assets/img/2. body_container/banner-clock.png" alt="AEC-calendar">
+                                                                <h4 class="core__intro-item-content--buy-text">Pay as you go with Flex for occasional
+                                                                    product use</h4>
+                                                            </div>
+                                                            <div class="core__intro-item-content--buy">
+                                                                <img class="core__intro-item-content--img-buy"
+                                                                    src="./assets/img/2. body_container/banner-guarantee.png" alt="AEC-calendar">
+                                                                <h4 class="core__intro-item-content--buy-text">Enjoy a 30-day money-back guarantee</h4>
+                                                            </div>
+                                                            <div class="core__intro-item-content--direction">
+                                                                <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 512 512">
+                                                                    <path
+                                                                        d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z" />
+                                                                </svg>
+                                                                <h4 class="core__intro-item-content--direction-text">See more reasons to buy with Autodesk
+                                                                </h4>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xfpage">        
+                                                    <div class="container__core-xfpage-img">
+                                                        <img class="container__core-xfpage-scale-img" src="./assets/img/2. body_container/future-of-work-banner-2000x1200-2.jpg" alt="future of work">
+                                                    </div>
+                                                    <div class="container__core-xfpage-item">
+                                                        <div class="container__core-xfpage-item--text">
+                                                            <h2 class="container__core-xfpage-item--heading-text">The future of work is &#x28still&#x29 human</h2>
+                                                            <h4 class="container__core-xfpage-item--content-text">Automation and artificial intelligence are changing the nature of work. Future-proof your workforce and your career with insights, technology, and training from Autodesk.</h4>
+                                                        </div>
+                                                        <div class="container__core-xfpage-item--direction">
+                                                            <a class="container__core-xfpage-item--direction-link" target="_blank" href="https://www.autodesk.com/future-of-work/get-started">
+                                                                <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/>
+                                                                </svg>
+                                                                <h4 class="core__intro-item-content--direction-text">Get started</h4>
+                                                            </a>
+                                                        </div>
+                                                    </div>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-controls">
+                                    <label for="img-3" class="prev-slide">
+                                        <span class="prev-slide__btn">&lsaquo;</span>
+                                    </label>
+                                    <label for="img-2" class="next-slide">
+                                        <span class="next-slide__btn">&rsaquo;</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <input type="radio" name="radio-buttons" id="img-2" />
+                            <!-- ----Slide PDM ---- -->
+                            <li class="slide-container pdm">
+                                <div class="slide-image">
+                                    <div class="slide-image--text">
+                                        <h1 class="slide-image--text-line">Innovate it.</h1>
+                                        <h1 class="slide-image--text-line">Manufacture it.</h1>
+                                        <h1 class="slide-image--text-line">Autodesk it.</h1>
+                                    </div>
+                                    <img class="slide-image--item" src="./assets/img/2. body_carousel/pdm-hyundai-hero-banner-2000x1200.jpg">
+                                    <p class="slide-image--copyright">Image courtesy of Huyndai Motor Group</p>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="core__intro">
+                                                <div class="core__intro-item">
+                                                    <a class="core__intro-item-link" target="_blank" href="https://www.autodesk.com/customer-stories/odico-manufacturing-robots">
+                                                        <div class="core__intro-item-content">
+                                                            <div class="core__intro-item-content--text">
+                                                                <h3 class="core__intro-item-content--heading-text">Odico&#39;s robot technology sparks innovation in the wind power industry.</h3>
+                                                            </div>
+                                                            <div class="core__intro-item-content--direction">
+                                                                <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/>
+                                                                </svg>
+                                                                <h4 class="core__intro-item-content--direction-text">Read the story</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="core__intro-item-img">
+                                                            <img class="core__intro-item-link-img" src="./assets/img/2. body_container/Design/pdm-odico-thumb-720x480.jpg" alt="pdm-odico">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="core__intro-item">
+                                                    <a class="core__intro-item-link" target="_blank" href="https://www.autodesk.com/collections/product-design-manufacturing/overview">
+                                                        <div class="core__intro-item-content">
+                                                            <div class="core__intro-item-content--text">
+                                                                <h3 class="core__intro-item-content--heading-text">Get the essential 3D CAD and CAM tools in a bundle and save.</h3>
+                                                            </div>
+                                                            <div class="core__intro-item-content--direction">
+                                                                <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/>
+                                                                </svg>
+                                                                <h4 class="core__intro-item-content--direction-text">See the Product Design & Manufacturing Collection</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="core__intro-item-img">
+                                                            <img class="core__intro-item-link-img" src="./assets/img/2. body_container/Design/pdm-collection-thumb-720x480.jpg" alt="pdm-collection">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="core__intro-item">
+                                                    <a class="core__intro-item-link" target="_blank" href="https://www.autodesk.com/industry#product-design-and-manufacturing">
+                                                        <div class="core__intro-item-content">
+                                                            <div class="core__intro-item-content--text">
+                                                                <h3 class="core__intro-item-content--heading-text">Find solutions for product design and manufacturing.</h3>
+                                                            </div>
+                                                            <div class="core__intro-item-content--direction">
+                                                                <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/>
+                                                                </svg>
+                                                                <h4 class="core__intro-item-content--direction-text">Explore tools and technologies</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="core__intro-item-img">
+                                                            <img class="core__intro-item-link-img" src="./assets/img/2. body_container/Design/pdm-industry-solutions-thumb-720x480.jpg" alt="pdm-industry">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="core__intro-item core__intro-item--pdm-me-buy">
+                                                    <a class="core__intro-item-link--buy" target="_blank" href="https://www.autodesk.com/benefits/overview">
+                                                        <div class="core__intro-item-content">
+                                                            <div class="core__intro-item-content-pdm-me-buy-text">
+                                                                <h3 class="core__intro-item-content--heading-text">Why buy with Autodesk?</h3>
+                                                            </div>
+                                                            <div class="core__intro-item-content--icons-buy">                                                               
+                                                                <div class="core__intro-item-content--buy">
+                                                                    <img class="core__intro-item-content--img-buy" src="./assets/img/2. body_container/banner-carlendar.png" alt="AEC-calendar">
+                                                                    <h4 class="core__intro-item-content--buy-text">Subscribe for 3 years, and save</h4>
+                                                                </div>
+                                                                <div class="core__intro-item-content--buy">
+                                                                    <img class="core__intro-item-content--img-buy" src="./assets/img/2. body_container/banner-clock.png" alt="AEC-calendar">
+                                                                    <h4 class="core__intro-item-content--buy-text">Pay as you go with Flex for occasional product use</h4>
+                                                                </div>
+                                                                <div class="core__intro-item-content--buy">
+                                                                    <img class="core__intro-item-content--img-buy" src="./assets/img/2. body_container/banner-guarantee.png" alt="AEC-calendar">
+                                                                    <h4 class="core__intro-item-content--buy-text">Enjoy a 30-day money-back guarantee</h4>
+                                                                </div>
+                                                                <div class="core__intro-item-content--direction">
+                                                                    <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                        <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/>
+                                                                    </svg>
+                                                                    <h4 class="core__intro-item-content--direction-text">See more reasons to buy with Autodesk</h4>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xfpage">        
+                                                    <div class="container__core-xfpage-img">
+                                                        <img class="container__core-xfpage-scale-img" src="./assets/img/2. body_container/future-of-work-banner-2000x1200-2.jpg" alt="future of work">
+                                                    </div>
+                                                    <div class="container__core-xfpage-item">
+                                                        <div class="container__core-xfpage-item--text">
+                                                            <h2 class="container__core-xfpage-item--heading-text">The future of work is &#x28still&#x29 human</h2>
+                                                            <h4 class="container__core-xfpage-item--content-text">Automation and artificial intelligence are changing the nature of work. Future-proof your workforce and your career with insights, technology, and training from Autodesk.</h4>
+                                                        </div>
+                                                        <div class="container__core-xfpage-item--direction">
+                                                            <a class="container__core-xfpage-item--direction-link" target="_blank" href="https://www.autodesk.com/future-of-work/get-started">
+                                                                <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/>
+                                                                </svg>
+                                                                <h4 class="core__intro-item-content--direction-text">Get started</h4>
+                                                            </a>
+                                                        </div>
+                                                    </div>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-controls">
+                                    <label for="img-1" class="prev-slide">
+                                        <span class="prev-slide__btn">&lsaquo;</span>
+                                    </label>
+                                    <label for="img-3" class="next-slide">
+                                        <span class="next-slide__btn">&rsaquo;</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <input type="radio" name="radio-buttons" id="img-3" />
+                            <!-- ----Slide ME ---- -->
+                            <li class="slide-container me">
+                                <div class="slide-image">
+                                    <div class="slide-image--text">
+                                        <h1 class="slide-image--text-line">Animate it.</h1>
+                                        <h1 class="slide-image--text-line">Render it.</h1>
+                                        <h1 class="slide-image--text-line">Autodesk it.</h1>
+                                    </div>
+                                    <img class="slide-image--item" src="./assets/img/2. body_carousel/me-laika-hero-banner-2000x1200.jpg">
+                                    <p class="slide-image--copyright">Image courtesy of LAIKA</p>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="core__intro">
+                                                <div class="core__intro-item">
+                                                    <a class="core__intro-item-link" target="_blank" href="https://www.autodesk.com/customer-stories/cinzia-angelini-virtual-animation-studio">
+                                                        <div class="core__intro-item-content">
+                                                            <div class="core__intro-item-content--text">
+                                                                <h3 class="core__intro-item-content--heading-text">A global army of artists unites in the cloud to animate a powerful anti-war story.</h3>
+                                                            </div>
+                                                            <div class="core__intro-item-content--direction">
+                                                                <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/>
+                                                                </svg>
+                                                                <h4 class="core__intro-item-content--direction-text">Read the story</h4>
+                                                            </div>
+                                                            <h4 class="core__intro-item-content--copyright-text">Image courtesy of Cinzia Angleini</h4>
+                                                        </div>
+                                                        <div class="core__intro-item-img core__intro-copyright-img">
+                                                            <img class="core__intro-item-link-img" src="./assets/img/2. body_container/Media/me-mila-thumb-720x480.jpg" alt="me-mila">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="core__intro-item">
+                                                    <a class="core__intro-item-link" target="_blank" href="https://www.autodesk.com/collections/media-entertainment/overview">
+                                                        <div class="core__intro-item-content">
+                                                            <div class="core__intro-item-content--text">
+                                                                <h3 class="core__intro-item-content--heading-text">Get the essential 3D animation and VFX tools in a bundle and save</h3>
+                                                            </div>
+                                                            <div class="core__intro-item-content--direction">
+                                                                <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/>
+                                                                </svg>
+                                                                <h4 class="core__intro-item-content--direction-text">See the Media & Entertainment Collection</h4>
+                                                            </div>
+                                                            <h4 class="core__intro-item-content--copyright-text">Image courtesy of Pixomondo</h4>
+                                                        </div>
+                                                        <div class="core__intro-item-img core__intro-copyright-img">
+                                                            <img class="core__intro-item-link-img" src="./assets/img/2. body_container/Media/me-collection-thumb-720x480.jpg" alt="me-collections">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="core__intro-item">
+                                                    <a class="core__intro-item-link" target="_blank" href="https://www.autodesk.com/industry#media-and-entertainment">
+                                                        <div class="core__intro-item-content">
+                                                            <div class="core__intro-item-content--text">
+                                                                <h3 class="core__intro-item-content--heading-text">Find solutions for media, entertainment, and visualization</h3>
+                                                            </div>
+                                                            <div class="core__intro-item-content--direction">
+                                                                <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/>
+                                                                </svg>
+                                                                <h4 class="core__intro-item-content--direction-text">Explore tools and technologies</h4>
+                                                            </div>
+                                                            <h4 class="core__intro-item-content--copyright-text">Image courtesy of Elizabeth Ku-Herrero on behalf of the Talking the Plunge team</h4>
+                                                        </div>
+                                                        <div class="core__intro-item-img core__intro-copyright-img">
+                                                            <img class="core__intro-item-link-img" src="./assets/img/2. body_container/Media/me-industry-solutions-thumb-720x480.jpg" alt="me-industry">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="core__intro-item core__intro-item--pdm-me-buy">
+                                                    <a class="core__intro-item-link--buy" target="_blank" href="https://www.autodesk.com/benefits/overview">
+                                                        <div class="core__intro-item-content">
+                                                            <div class="core__intro-item-content-pdm-me-buy-text">
+                                                                <h3 class="core__intro-item-content--heading-text">Why buy with Autodesk?</h3>
+                                                            </div>
+                                                            <div class="core__intro-item-content--icons-buy">                                                               
+                                                                <div class="core__intro-item-content--buy">
+                                                                    <img class="core__intro-item-content--img-buy" src="./assets/img/2. body_container/banner-carlendar.png" alt="AEC-calendar">
+                                                                    <h4 class="core__intro-item-content--buy-text">Subscribe for 3 years, and save</h4>
+                                                                </div>
+                                                                <div class="core__intro-item-content--buy">
+                                                                    <img class="core__intro-item-content--img-buy" src="./assets/img/2. body_container/banner-clock.png" alt="AEC-calendar">
+                                                                    <h4 class="core__intro-item-content--buy-text">Pay as you go with Flex for occasional product use</h4>
+                                                                </div>
+                                                                <div class="core__intro-item-content--buy">
+                                                                    <img class="core__intro-item-content--img-buy" src="./assets/img/2. body_container/banner-guarantee.png" alt="AEC-calendar">
+                                                                    <h4 class="core__intro-item-content--buy-text">Enjoy a 30-day money-back guarantee</h4>
+                                                                </div>
+                                                                <div class="core__intro-item-content--direction">
+                                                                    <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                        <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/>
+                                                                    </svg>
+                                                                    <h4 class="core__intro-item-content--direction-text">See more reasons to buy with Autodesk</h4>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xfpage">        
+                                                    <div class="container__core-xfpage-img">
+                                                        <img class="container__core-xfpage-scale-img" src="./assets/img/2. body_container/future-of-work-banner-2000x1200-2.jpg" alt="future of work">
+                                                    </div>
+                                                    <div class="container__core-xfpage-item">
+                                                        <div class="container__core-xfpage-item--text">
+                                                            <h2 class="container__core-xfpage-item--heading-text">The future of work is &#x28still&#x29 human</h2>
+                                                            <h4 class="container__core-xfpage-item--content-text">Automation and artificial intelligence are changing the nature of work. Future-proof your workforce and your career with insights, technology, and training from Autodesk.</h4>
+                                                        </div>
+                                                        <div class="container__core-xfpage-item--direction">
+                                                            <a class="container__core-xfpage-item--direction-link" target="_blank" href="https://www.autodesk.com/future-of-work/get-started">
+                                                                <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/>
+                                                                </svg>
+                                                                <h4 class="core__intro-item-content--direction-text">Get started</h4>
+                                                            </a>
+                                                        </div>
+                                                    </div>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-controls">
+                                    <label for="img-2" class="prev-slide">
+                                        <span class="prev-slide__btn">&lsaquo;</span>
+                                    </label>
+                                    <label for="img-1" class="next-slide">
+                                        <span class="next-slide__btn">&rsaquo;</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <div class="carousel__headings">
+                                <label for="img-1" class="carousel-heading" id="img-heading-1">
+                                    Architecture, Engineering & Construction</label>
+                                <label for="img-2" class="carousel-heading" id="img-heading-2">
+                                    Product Design & Manufacturing</label>
+                                <label for="img-3" class="carousel-heading" id="img-heading-3">
+                                    Media & Entertainment</label>
+                            </div>
+                            <a class="carousel__go-shop-btn" target="_blank" href="https://www.autodesk.com/products">Shop all products</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CORE --------------------- -->
+            <div class="container__carousel">
+            </div>
+            <div class="container__core">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col">
+                            <div class="core__intro-item core__welcome">
+                                <a class="core__intro-item-link" target="_blank" href="https://www.autodesk.com/company">
+                                    <div class="core__intro-item-content">
+                                        <div class="core__intro-item-content--text">
+                                            <h3 class="core__intro-item-content--heading-text">Welcome to the new possible</h3>
+                                            <h4 class="core__intro-item-content--content-text">Autodesk is a global leader in design and make technology. With expertise across architecture, engineering, construction, design, manufacturing, and entertainment, we help innovators everywhere solve todayt&#39;s pressing challenges.</h4>
+                                        </div>
+                                        <div class="core__intro-item-content--direction">
+                                            <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path
+                                                    d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z" />
+                                            </svg>
+                                            <h4 class="core__intro-item-content--direction-text">Explore tools and technologies</h4>
+                                        </div>
+                                    </div>
+                                    <div class="core__intro-item-img">
+                                        <img class="core__intro-item-link-img"
+                                            src="./assets/img/2. body_container/new-possible-thumb-720x480.jpg" alt="AEC-Arcadis">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="core__intro-item core__intro-item-main">
+                                <a class="core__intro-item-link" target="_blank" href="https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual">
+                                    <div class="core__intro-item-main-content">
+                                        <div class="core__intro-item-main-content--text">
+                                            <h4 class="core__intro-item-content--title-text">EDUCATION</h4>
+                                            <h3 class="core__intro-item-content--heading-text">Design your future with free educational access to software.</h3>
+                                        </div>
+                                        <div class="core__intro-item-content--direction">
+                                            <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/>
+                                            </svg>
+                                            <h4 class="core__intro-item-content--direction-text">Get free software for students</h4>
+                                        </div>
+                                    </div>
+                                    <div class="core__intro-item-img">
+                                        <img class="core__intro-item-link-img" src="./assets/img/2. body_container/education-thumb-720x480.jpg" alt="education">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="core__intro-item core__intro-item-main">
+                                <a class="core__intro-item-link" target="_blank" href="https://www.autodesk.com/company/autodesk-it">
+                                    <div class="core__intro-item-main-content">
+                                        <div class="core__intro-item-main-content--text">
+                                            <h4 class="core__intro-item-content--title-text">OUR BRAND</h4>
+                                            <h3 class="core__intro-item-content--heading-text">Don&#39;t wait for progress, make it. See how innovators Autodesk it..</h3>
+                                        </div>
+                                        <div class="core__intro-item-content--direction">
+                                            <svg class="core__intro-item-content--direction-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/>
+                                            </svg>
+                                            <h4 class="core__intro-item-content--direction-text">Explore your new possible</h4>
+                                        </div>
+                                        <h4 class="core__intro-item-content--copyright-text">Image courtesy of Hayes Davidson</h4>
+                                    </div>
+                                    <div class="core__intro-item-img core__intro-copyright-img">
+                                        <img class="core__intro-item-link-img" src="./assets/img/2. body_container/autodesk-story-thumb-720x480.jpg" alt="autodesk-story">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- FOOTER----------------------------------------------------- -->
+        <div class="app__footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col footer-col">
+                        <div class="footer__items">
+                            <h3 class="footer__heading">FOLLOW AUTODESK</h3>
+                            <ul class="footer__list">
+                                <li class="footer-item">
+                                    <a href="https://www.facebook.com/AutodeskASEAN/?brand_redir=132081383503163&source=footer" target="_blank" class="footer-item__link">
+                                        <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                                            <path d="M1667 0c920 0 1667 746 1667 1667 0 920-746 1667-1667 1667C747 3334 0 2588 0 1667 0 747 746 0 1667 0zm186 1117h311V744h-311c-240 0-435 195-435 435v186h-249v373h249v994h373v-994h311l62-373h-373v-186c0-34 28-62 62-62z"/>
+                                        </svg>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.instagram.com/autodesk/?source=footer" target="_blank" class="footer-item__link">
+                                        <svg  class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                                            <path d="M1667 0c920 0 1667 746 1667 1667 0 920-746 1667-1667 1667C747 3334 0 2588 0 1667 0 747 746 0 1667 0zm-390 752h780c293 0 532 237 532 525v778c0 289-239 525-532 525h-780c-293 0-532-236-532-525v-778c0-289 240-525 532-525zm385 421c285 0 516 231 516 516s-231 516-516 516-516-231-516-516 231-516 516-516zm0 174c188 0 341 153 341 341s-153 341-341 341c-189 0-341-153-341-341s153-341 341-341zm499-246c46 0 84 37 84 84 0 46-37 84-84 84-46 0-84-37-84-84 0-46 37-84 84-84zm-820-200h652c245 0 445 199 445 443v656c0 244-200 443-445 443h-652c-245 0-445-199-445-443v-656c0-244 200-443 445-443z"/>
+                                        </svg>
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://twitter.com/autodesk?source=footer" target="_blank" class="footer-item__link">
+                                        <svg  class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                                            <path d="M1667 0c920 0 1667 746 1667 1667 0 920-746 1667-1667 1667C747 3334 0 2588 0 1667 0 747 746 0 1667 0zm900 1108c-66 30-137 49-212 58 76-46 135-118 162-204-71 42-151 73-234 90-68-72-163-116-270-116-204 0-369 165-369 369 0 29 3 57 9 84-307-16-579-162-761-386-33 56-50 120-50 186 0 128 65 241 164 307-61-2-117-19-167-46v5c0 179 127 328 296 362-31 8-64 13-97 13-24 0-47-2-70-7 47 147 183 253 345 257-127 99-285 158-459 158-30 0-59-2-88-5 164 105 358 166 566 166 679 0 1051-563 1051-1051 0-16 0-32-1-48 72-52 135-117 184-191z"/>
+                                        </svg>
+                                        Twitter
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.linkedin.com/company/autodesk/?source=footer" target="_blank" class="footer-item__link">
+                                        <svg  class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                                            <path d="M1667 0c920 0 1667 746 1667 1667 0 920-746 1667-1667 1667C747 3334 0 2588 0 1667 0 747 746 0 1667 0zm-215 1336h342v175h5c48-86 164-175 338-175 361 0 428 225 428 517v596h-357v-528c0-126-3-288-186-288-186 0-214 137-214 279v537h-357V1336zm-247-309c0 102-83 186-186 186-102 0-186-83-186-186 0-102 83-186 186-186 102 0 186 83 186 186zm-371 309h371v1113H834V1336z"/>
+                                        </svg>
+                                        LinkedIn
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/social-media?source=footer" target="_blank" class="footer-item__link">All social media</a>
+                                </li>
+                                <li class="footer-item">
+                                    <p class="footer-line"></p>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/site-selector?source=footer" target="_blank" class="footer-item__link">
+                                        <svg  class="footer-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 489 489" enable-background="new 0 0 489 489">
+                                            <g>
+                                              <path d="m244.5,0c-135.2,0-244.5,109.3-244.5,244.5s109.3,244.5 244.5,244.5 244.5-109.3 244.5-244.5-109.3-244.5-244.5-244.5zm-73.8,33.3c-12.9,18.1-23.9,37.2-33.1,57.2h-55.5c24.2-25.6 54.5-45.4 88.6-57.2zm-106.1,78h64.2c-15.1,38.9-23.4,80.4-24.6,122.8h-83.1c2.1-45.9 17.9-88.2 43.5-122.8zm0,266.4c-25.6-34.6-41.4-76.9-43.5-122.8h83.1c1.2,42.4 9.8,83.9 25,122.8h-64.6zm17.5,20.8h56c9.3,20 20.3,39.3 33,57.4-34.2-11.8-64.7-31.7-89-57.4zm152,69.5c-10.4-0.5-20.7-1.7-30.7-3.5-16.6-20.5-30.8-42.6-42.3-65.9h73v69.4zm-0-90.3h-82.5c-16.1-38.8-25.3-80.3-26.6-122.8h109.1v122.8zm0-143.6h-109.1c1.3-42.4 10.4-84 26.4-122.8h82.7v122.8zm.1-143.6h-0.1-73.2c11.6-23.5 25.8-45.6 42.5-65.9 10-1.9 20.3-3 30.8-3.5v69.4zm190.2,20.8c25.6,34.6 41.5,76.8 43.5,122.8h-83.1c-1.2-42.4-9.8-83.9-25-122.8h64.6zm-17.5-20.8h-56c-9.3-20-20.3-39.3-33.1-57.4 34.3,11.8 64.8,31.7 89.1,57.4zm-152-69.4c10.4,0.5 20.7,1.7 30.7,3.5 16.6,20.5 30.8,42.6 42.3,65.9h-73v-69.4zm-0,90.2h82.5c16.1,38.7 25.3,80.3 26.6,122.8h-109.1v-122.8zm0,143.6h109.1c-1.3,42.4-10.4,84-26.4,122.8h-82.7l-0-122.8zm-.1,213v-69.4h0.1 73.2c-11.6,23.5-25.8,45.6-42.5,65.9-10,1.9-20.3,3-30.8,3.5zm63-12c12.7-18.1 23.7-37.4 32.9-57.4h56.3c-24.4,25.7-54.9,45.6-89.2,57.4zm41.7-78.2c15-38.9 23.5-80.4 25.2-122.8h83.3c-2.1,45.9-17.9,88.2-43.5,122.8h-65z"/>
+                                            </g>
+                                          </svg>
+                                        Worldwide sites
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col footer-col">
+                        <div class="footer__items">
+                            <h3 class="footer__heading">PRODUCTS</h3>
+                            <ul class="footer__list">
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/free-trials?source=footer" target="_blank" class="footer-item__link">Free product trials</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/solutions/3d-cad-software?source=footer" target="_blank" class="footer-item__link">3D CAD software</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/solutions/3d-modeling-software?source=footer" target="_blank" class="footer-item__link">3D modeling</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/solutions/3d-animation-software?source=footer" target="_blank" class="footer-item__link">3D animation</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/collections/architecture-engineering-construction/overview?source=footer" target="_blank" class="footer-item__link">Civil engineering</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/products/autocad-lt/overview?source=footer" target="_blank" class="footer-item__link">Drafting</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/solutions/manufacturing?source=footer" target="_blank" class="footer-item__link">Manufacturing</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/collections/product-design-manufacturing/overview?source=footer" target="_blank" class="footer-item__link">Product design</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/solutions?source=footer" target="_blank" class="footer-item__link">Find by industry</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/collections?source=footer" target="_blank" class="footer-item__link">Industry collections</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col footer-col">
+                        <div class="footer__items">
+                            <h3 class="footer__heading">BUYING</h3>
+                            <ul class="footer__list">
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/promotions?source=footer" target="_blank" class="footer-item__link">Special offers</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/store-footer-help-account?mktvar004=ilt_wwm_amer_us_nc__Footer_SupportAssistance_ManageAct&source=footer" target="_blank" class="footer-item__link">Manage your account</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/customer/help?source=footer" target="_blank" class="footer-item__link">Help with buying</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://manage.autodesk.com/cep/#products-services/all?source=footer" target="_blank" class="footer-item__link">Download your software</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/store-footer-help-return?mktvar004=ilt_wwm_amer_us_nc__Footer_ShoppingWithUs_OrderReturn&source=footer#returns-and-cancellations" target="_blank" class="footer-item__link">Returns & refunds</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/renewal?source=footer" target="_blank" class="footer-item__link">Renewal options</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/benefits/financing?source=footer" target="_blank" class="footer-item__link">Autodesk Financing</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/plans?source=footer" target="_blank" class="footer-item__link">Compare plans</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col footer-col">
+                        <div class="footer__items">
+                            <h3 class="footer__heading">SUPPORT & LEARNING</h3>
+                            <ul class="footer__list">
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/covid-19/resource-center?source=footer" target="_blank" class="footer-item__link">COVID-19 Resource Center</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://knowledge.autodesk.com/support?source=footer" target="_blank" class="footer-item__link">Product support</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/support/download-install?source=footer" target="_blank" class="footer-item__link">Software installation, registration & licensing</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://knowledge.autodesk.com/download?source=footer" target="_blank" class="footer-item__link">Updates & service packs</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://knowledge.autodesk.com/support/system-requirements?source=footer" target="_blank" class="footer-item__link">System requirements</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/education/home?mktvar004=ilt_wwm_amer_us_nc__Footer_SubscNSoftware_EDU&source=footer" target="_blank" class="footer-item__link">Students & educators</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/autodesk-university/?source=footer" target="_blank" class="footer-item__link">Autodesk University</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/events?source=footer" target="_blank" class="footer-item__link">Conferences & events</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/training?source=footer" target="_blank" class="footer-item__link">Training</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/certification?source=footer" target="_blank" class="footer-item__link">Certification</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://servicesmarketplace.autodesk.com/?utm_source=autodesk.com&utm_medium=referral&utm_campaign=smp_resurfacing&utm_content=sitefooter" target="_blank" class="footer-item__link">Partner professional services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col last-col">
+                        <div class="footer__items">
+                            <h3 class="footer__heading">AUTODESK</h3>
+                            <ul class="footer__list">
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/company?source=footer" target="_blank" class="footer-item__link">About us</a>
+                                </li>
+                                <li class="footer-item autodesk">
+                                    <h4 class="about-us">Autodesk is a leader in 3D design, engineering and entertainment software.</h4>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/careers?source=footer" target="_blank" class="footer-item__link">Careers</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/company/contact-us?source=footer" target="_blank" class="footer-item__link">Contact us</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://investors.autodesk.com/?source=footer" target="_blank" class="footer-item__link">Investor relations</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/trust/overview?source=footer" target="_blank" class="footer-item__link">Trust center</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://adsknews.autodesk.com/?source=footer" target="_blank" class="footer-item__link">Newsroom</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/company/suppliers?source=footer"target="_blank" class="footer-item__link">Suppliers</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/affiliate-program/overview?source=footer" target="_blank" class="footer-item__link">Affiliate Program</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="https://www.autodesk.com/benefits/referral-program?source=footer" target="_blank" class="footer-item__link">Referral Program</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="grid wide">
+                <div class="footer__bottom--items">
+                    <a href="" target="_blank" class="footer-item__bottom-link">Privacy settings</a>
+                    <a href="https://www.autodesk.com/company/legal-notices-trademarks/ccpa-do-not-sell" target="_blank" class="footer-item__bottom-link">Do not sell my personal information</a>
+                    <a href="https://www.autodesk.com/company/legal-notices-trademarks/privacy-statement" target="_blank" class="footer-item__bottom-link">Privacy/Cookies</a>
+                    <a href="https://www.autodesk.com/company/legal-notices-trademarks/privacy-statement/autodesk-privacy-statement-2015-english#mixpanel" target="_blank" class="footer-item__bottom-link">About our Ads</a>
+                    <a href="https://www.autodesk.com/company/legal-notices-trademarks" target="_blank" class="footer-item__bottom-link">Legal</a>
+                    <a href="https://www.autodesk.com/genuine/report-piracy" target="_blank" class="footer-item__bottom-link">Report Noncompliance</a>
+                    <a href="https://www.autodesk.com/sitemap" target="_blank" class="footer-item__bottom-link">Site map</a>
+                    <a target="_blank" class="footer-item__copyright">© 2021 Autodesk Inc. All rights reserved</a>
+                </div>
+            </div>
+            <div class="help">
+                <div class="help__item">
+                    <svg class="help__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 0.5H26C38.9787 0.5 49.5 11.0213 49.5 24V49C49.5 49.2761 49.2761 49.5 49 49.5H24C11.0213 49.5 0.5 38.9787 0.5 26V24C0.5 11.0213 11.0213 0.5 24 0.5Z" fill="black" stroke="white"></path><path d="M22.8876 29.212H26.7486V28.387C26.7486 24.658 32.5896 24.427 32.5896 19.939V18.949C32.5896 15.946 29.9826 13.471 25.5606 13.471C22.2606 13.471 20.0826 14.593 18.1356 16.144L19.9836 18.586C21.7986 17.332 23.0856 16.639 25.1976 16.639C27.2106 16.639 28.3656 17.695 28.3656 19.312V20.104C28.3656 22.942 22.8876 23.602 22.8876 28.255V29.212ZM24.8016 37.429C26.2866 37.429 27.4086 36.274 27.4086 34.822C27.4086 33.403 26.2866 32.215 24.8016 32.215C23.3826 32.215 22.2276 33.403 22.2276 34.822C22.2276 36.274 23.3826 37.429 24.8016 37.429Z" fill="white"></path>
+                    </svg>
+                </div>
+                <div class="help__container">
+                    <div class="help__window">
+                        <div class="help__window-main-header">
+                            <div class="help__window-header">
+                                <span class="help__window-header__icon">
+                                    <svg class="icon-home--solid" fill="#fff" viewBox="0 0 24 17.76" height="100%" width="100%">
+                                        <path d="M3.787 11.413v6.347h6.026v-5.067h4.373v5.067h6.027v-6.347H24L12 0 0 11.413z"></path>
+                                    </svg>
+                                    <svg class="icon-home--outline" fill="#fff" viewBox="0 0 24 17.76" height="100%" width="100%">
+                                        <path d="M19.213 16.76v-6.347h2.285L12 1.38l-9.498 9.033h2.285v6.347h4.026v-5.067h6.374v5.067h4.026m1 1h-6.026v-5.067H9.813v5.067H3.787v-6.347H0L12 0l12 11.413h-3.787v6.347z"> </path>
+                                    </svg>
+                                </span>
+                                <span class="help__window-header__title">GET HELP</span>
+                                <span class="help__window-header__close">
+                                    <div class="help__window-header__close-icon"></div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="help__window-main-container">
+                            <div class="help__window-main-container__body">
+                                <div class="help__window-main-container__title">Let’s guide you to the right answer or agent.</div>
+                                <ul class="help__window-main-container__items">
+                                    <li class="help__window-main-container__item">
+                                        <div class="help__window-main-container__item-label">Questions about buying</div>
+                                        <div class="help__window-main-container__item-description">Compare products, prices, and subscription terms, or help me pay and check out</div>
+                                        <div class="help__window-main-container__item-greater-than">
+                                            <svg fill="#000" viewBox="0 0 16 16" class="" height="15px" width="15px">
+                                                <path d="m4.28 12.63 4.54-4.54-4.54-4.53 1.77-1.77 6.3 6.3-6.3 6.31-1.77-1.77z"></path>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="help__window-main-container__item">
+                                        <div class="help__window-main-container__item-label">Education & trial support</div>
+                                        <div class="help__window-main-container__item-description">Download, install, and troubleshoot products, or convert to a paid subscription</div>
+                                        <div class="help__window-main-container__item-greater-than">
+                                            <svg fill="#000" viewBox="0 0 16 16" class="" height="15px" width="15px">
+                                                <path d="m4.28 12.63 4.54-4.54-4.54-4.53 1.77-1.77 6.3 6.3-6.3 6.31-1.77-1.77z"></path>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="help__window-main-container__item">
+                                        <div class="help__window-main-container__item-label">Post-purchase support</div>
+                                        <div class="help__window-main-container__item-description">Manage subscription, find downloads, troubleshoot installation and product issues</div>
+                                        <div class="help__window-main-container__item-greater-than">
+                                            <svg fill="#000" viewBox="0 0 16 16" class="" height="15px" width="15px">
+                                                <path d="m4.28 12.63 4.54-4.54-4.54-4.53 1.77-1.77 6.3 6.3-6.3 6.31-1.77-1.77z"></path>
+                                            </svg>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="./assets/js/main.js"></script> -->
+</body>
+</html>

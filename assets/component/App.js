@@ -6,7 +6,7 @@ import Footer from "./Footer/Footer.js";
 
 function App() {
     return html`
-        <div class="overlay activeee"></div>
+        <div class="overlay" id="overlay"></div>
         ${Mobile()}
         ${Header()}
         ${Main()}

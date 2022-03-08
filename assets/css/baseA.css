@@ -1,0 +1,123 @@
+:root {
+    --search-color: #212121;
+    --white-color: #fff;
+    --black-color: #000;
+    --fixedbar-color: #0a0a0a;
+    --border-color: #dbdbdb;
+    --footer-color: #f5f5f5;
+    --footer-bottom-color: #eeeeee;
+    --footer-text: #212121;
+    --popup-win-line: #ccc;
+    --header-height: 98px;
+    --header-navbar-height: 56px;
+    --fixedbar-height: calc(var(--header-height) 
+    - var(--header-navbar-height));
+    --banner-height: 612px;
+    --footer-height: 415px;
+    --buy-height: 280px;
+    --search-bar-width: 350px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body, p, a, ul, li { 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+  /* Works on Chrome, Edge, and Safari */
+  /* *::-webkit-scrollbar {
+    width: 6px;
+  }
+  *::-webkit-scrollbar-track {
+    background: var(--white-color);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  } */
+@font-face {
+    font-family: artifakt-bold;
+    src: url("../fonts/ArtifaktLegend-Bold.woff.ttf");
+}
+@font-face {
+    font-family: artifakt-medium;
+    src: url("../fonts/ArtifaktElement-Medium.woff.ttf");
+}
+@font-face {
+    font-family: artifakt-light;
+    src: url("../fonts/ArtifaktElement-Light.woff.ttf");
+}
+html {
+    /* thuong thi 100% = 16px, nen 62.5% = 10px 
+    => 1rem =10px; 1.6rem = 16px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+}
+body {
+    font-style: normal;
+    font-weight: 100;
+    background-color: #fff;
+    color: red;
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 1.4rem;
+    font-family: 'artifakt-medium', sans-serif;
+    display: block;
+    
+}
+
+button {
+    background: none;
+    text-align: center;
+}
+  
+  button.active.focus, button.active:focus,
+  button.focus, button:active.focus, 
+  button:active:focus, button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+/* #region Animation */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes notificationGrow {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+        opacity: 0;
+    }
+    to {
+        transform: scale(var(--growth-to));
+        opacity: 1;
+    }
+}
+/* #endregion Animation */
+
+

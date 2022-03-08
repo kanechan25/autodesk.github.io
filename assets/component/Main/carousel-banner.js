@@ -8,7 +8,7 @@ function carousel_banner() {
                 <div class="carousel">
                     <div class="carousel-headings-wrap">
                         <ul class="carousel__headings">
-                            <li class="carousel-heading" id="carousel-heading-1">
+                            <li class="carousel-heading active" id="carousel-heading-1">
                                 Architecture, Engineering & Construction</li>
                             <li class="carousel-heading" id="carousel-heading-2">
                                 Product Design & Manufacturing</li>
