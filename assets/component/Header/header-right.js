@@ -1,4 +1,7 @@
 import html from "../../js/core.js";
+import header_right_language from "../Header/header-right-language.js"
+import mobile_language from "../Mobile/mobile-language.js"
+import mobile_search from "../Mobile/mobile-search.js";
 
 function header_right() {
     return html`
@@ -10,13 +13,15 @@ function header_right() {
                     </path>
                 </svg>
             </div>
+            <!-- html of Mobile search here -->
+            ${mobile_search()}
             <div class="header__right-cart">
                 <a class="right-cart__wrap" target="_blank" href="https://checkout.autodesk.com/en-US?currency=USD">                               
                     <svg class="right-cart__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                         <path d="M17.6 14.3H5.9c-.3 0-.5-.2-.6-.5L2.8 1.2H0V0h3.2c.3 0 .5.2.6.5l2.5 12.6 10.8.1 1.7-8.1 1.2.2-1.8 8.5c0 .3-.3.5-.6.5z" fill="#fff"></path>
                         <circle cx="7.2" cy="18" r="2" fill="#fff"></circle>
                         <circle cx="16.3" cy="18" r="2" fill="#fff"></circle>
-                    </svg> 
+                    </svg>
                     <span class="right-cart__notice">3</span>
                 </a>
             </div>
@@ -30,12 +35,13 @@ function header_right() {
                 <div class="right-language__list">
                     <div class="right-language__selector">
                         <!-- html of language list here-->
+                        ${header_right_language()}
                     </div>
                 </div>
             </div>
             <button class="header__right-mini-dot">
                 <i class="fas fa-ellipsis-h"></i>
-                <div class="right-task-container activeee">
+                <div class="right-task-container">
                     <ul class="right-task">
                         <li class="right-task-icon search-wrap">
                             <div class="task__search-mini">
@@ -70,6 +76,7 @@ function header_right() {
                     </ul>
                 </div>
             </button>
+            ${mobile_language()}
             <div class="header__right-account">
                 <button class="right-account__btn">
                     <div class="right-account__wrap">

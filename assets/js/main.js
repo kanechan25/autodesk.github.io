@@ -18,7 +18,29 @@ if (appElement) {
 
 // #region 2. Navigation Popups
 const navBtn = $$('.nav__btn')
-var overlay = document.getElementById('overlay');
+var tranOverlay = document.getElementById('tranOverlay');
+var darkOverlay = document.getElementById('darkOverlay');
+
+function clearAll() {
+    navMobile.classList.remove('active');
+    rightTaskContainer.classList.remove('active')
+    mobileLanguageWindow.classList.remove('active')
+    pcLanguageWindow.classList.remove('active') 
+    closeNavPopups()
+}
+
+if (tranOverlay) {            
+    tranOverlay.onclick = function() {
+        clearAll()
+        tranOverlay.classList.remove("active")
+    }
+}
+if (darkOverlay) {            
+    darkOverlay.onclick = function() {
+        clearAll()
+        darkOverlay.classList.remove("active")
+    }
+}
 
 function closeNavPopups() {
     for (let j = 0; j < navBtn.length; j++) {
@@ -39,7 +61,7 @@ if (navBtn) {
         navBtn[i].onclick = function() {
             if (navBtn[i].querySelector('.navbar__selector').classList.contains('active')) {
                 closePopup(i)
-                overlay.classList.remove("active")
+                tranOverlay.classList.remove("active")
             } else {
                 for (let j = 0; j < navBtn.length; j++) {
                     if (j !== i) {
@@ -47,9 +69,7 @@ if (navBtn) {
                     }
                 }
                 openPopup(i)
-                overlay.classList.add("active")
-                overlay.style.opacity = 0;
-                overlay.style.zIndex = 9;
+                tranOverlay.classList.add("active")
             }
         }
 
@@ -76,21 +96,13 @@ var navMobile = $('.mobile-navbar-wrap');
 var closeNavMobile = $('.mn__btn-nav');
 miniBar.onclick = function openMobileNavbar() {
     navMobile.classList.add('active');
-    overlay.classList.add('active');
+    darkOverlay.classList.add('active');
 }
 closeNavMobile.onclick = function closeMobileNavbar() {
     navMobile.classList.remove('active');
-    overlay.classList.remove('active');
+    darkOverlay.classList.remove('active');
 }
-if (overlay) {            
-    overlay.onclick = function() {
-        navMobile.classList.remove('active');
-        closeNavPopups()
-        overlay.style.opacity = 0.7;
-        overlay.classList.remove("active")
 
-    }
-}
 
 var level00 = $('.mn__main-component-ul.level-00');
 var level00_items = $$('.item-mobile-level-0');
@@ -109,7 +121,7 @@ function openLevels(elements) {
             let clickedId = this.id
             let clickedContainer = findElementbyClassName('mn__main-component-ul', clickedId)
             clickedContainer.classList.add('active');
-            this.closest('.mn__main-component-ul').classList.remove('active');        
+            this.closest('.mn__main-component-ul').classList.remove('active');
         }
     }
 }
@@ -140,6 +152,8 @@ for (let j = 0; j < backBtns.length; j++) {
 
 //#endregion 3. Toggle Mobile Navigation
 
+// #region 4. Carousel
+
 function findActive(elements) {
     var activeNum; //return order number of active element
     for (let i = 0; i < elements.length; i++) {
@@ -150,9 +164,6 @@ function findActive(elements) {
     }
     return activeNum
 }
-
-// #region 4. Carousel
-
 var headingBtns = $$('.carousel-heading')
 var slides = $$('.carousel-slide')
 var carouselBanner = $$('.carousel-banner')
@@ -325,7 +336,85 @@ nextBtn.onclick = function next() {
 
 // #region 5. Language Button
 
+//a. language button on Mobile
+var dotBtn = $('.header__right-mini-dot')
+var rightTaskContainer = $('.right-task-container')
+
+dotBtn.onclick = function dotBtnClick() {
+    if (rightTaskContainer.classList.contains('active')) {
+        rightTaskContainer.classList.remove('active')
+        tranOverlay.classList.remove("active")
+    }
+    else {
+        rightTaskContainer.classList.add('active')
+        tranOverlay.classList.add("active")
+
+    }
+}
+
+var languageBtnMobile = $('.task__language')
+var mobileLanguageWindow = $('.mobile-language-wrap')
+languageBtnMobile.onclick = function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    rightTaskContainer.classList.remove('active')
+    
+    darkOverlay.classList.add("active")
+    mobileLanguageWindow.classList.add('active')
+}
+var closeMobileLanguage = $('.mn__btn-nav.mobile-right-close')
+closeMobileLanguage.onclick = function () {
+    mobileLanguageWindow.classList.remove('active')
+    darkOverlay.classList.remove("active")
+    
+}
+// b. language button on PC
+var languageBtnPC = $('.header__right-language')
+var pcLanguageWindow = $('.right-language__list')
+languageBtnPC.onclick = function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    if (pcLanguageWindow.classList.contains('active')) {
+        pcLanguageWindow.classList.remove('active')
+        tranOverlay.classList.remove("active")
+    }
+    else {
+        pcLanguageWindow.classList.add('active')
+        tranOverlay.classList.add("active")
+
+    }
+}
 
 
 // #endregion
 
+// #region 6.Search Button Mobile
+
+var searchIconPC = $('.header__right-search-mini')
+var searchPopupMobile = $('.mobile-search-wrap')
+
+searchIconPC.onclick = function () {
+    if (searchPopupMobile.classList.contains('active')) {
+        searchPopupMobile.classList.remove('active')
+    }
+    else {
+        searchPopupMobile.classList.add('active')
+    }
+}
+var searchIconMobile = $('.task__search-mini')
+searchIconMobile.onclick = function () {
+    if (searchPopupMobile.classList.contains('active')) {
+        searchPopupMobile.classList.remove('active')
+    }
+    else {
+        searchPopupMobile.classList.add('active')
+    }
+}
+var closeSearchIcon = searchPopupMobile.querySelector('.mn__btn-nav')
+closeSearchIcon.onclick = function() {
+    searchPopupMobile.classList.remove('active')
+}
+
+
+
+// #endregion

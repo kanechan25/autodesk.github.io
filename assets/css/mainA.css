@@ -195,7 +195,7 @@ ul {
 .header__navbar-language {
     width: 66px;
 }     
-.header__navbar-language-btn {
+.right-language__btn {
     text-transform: none;
     position: static;
     width: 66px;
@@ -208,23 +208,23 @@ ul {
     text-decoration: none;
 }
 
-.header__navbar-language-btn:hover {
+.right-language__btn:hover {
     cursor: pointer;
     background-color: var(--search-color);
 }
 
-.header__navbar-language-btn:focus {
+.right-language__btn:focus {
     outline: 1px solid rgb(95 96 255);
 }
-.header__navbar-language-btn:focus ~ .header__navbar-language-list {
+.right-language__btn:focus ~ .right-language__list {
     display: block;
 }
-.header__navbar-language-icon {
+.right-language__icon {
     width: 24px;
     margin: 8px 2px 8px 2px;
 }
 
-.header__navbar-language-text {
+.right-language__text {
     color: var(--white-color);
     margin: 12px 0px 0px 2px;
 }

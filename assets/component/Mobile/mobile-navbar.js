@@ -2,7 +2,7 @@ import html from "../../js/core.js";
 import mn_top from "./mn-top.js"
 import mn_main from "./mn-main.js"
 
-function Mobile() {
+function mobile_navbar() {
     return html`
         <div class="mobile-navbar-wrap">
             <div class="mobile-navbar">
@@ -12,4 +12,4 @@ function Mobile() {
         </div>
     `
 }
-export default Mobile
+export default mobile_navbar
