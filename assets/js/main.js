@@ -166,7 +166,7 @@ function findActive(elements) {
 }
 var headingBtns = $$('.carousel-heading')
 var slides = $$('.carousel-slide')
-var carouselBanner = $$('.carousel-banner')
+var carouselBanner = $$('.carousel-banner')[0]
 var coreCarousels = $$('.core-react')
 
 var prevHalfBtn = $('.prev-slide.control-half-btn')
@@ -177,24 +177,33 @@ var nextBtn = $('.next-slide.control-btn')
 
 // width >= 768px
 var bigImgLink = [
-    "url('../assets/img/2. body_carousel/aec-factoryos-hero-banner-2000x1200.jpg')",
-    "url('../assets/img/2. body_carousel/pdm-hyundai-hero-banner-2000x1200.jpg')",
-    "url('../assets/img/2. body_carousel/me-laika-hero-banner-2000x1200.jpg')"
+    "url('/assets/img/2. body_carousel/aec-factoryos-hero-banner-2000x1200.jpg')",
+    "url('/assets/img/2. body_carousel/pdm-hyundai-hero-banner-2000x1200.jpg')",
+    "url('/assets/img/2. body_carousel/me-laika-hero-banner-2000x1200.jpg')"
 ]
 // width < 768px
 var smallImgLink = [
-    "url('../assets/img/2. body_carousel/aec-factoryos-hero-banner-mobile-800x500-4.jpg')",
-    "url('../assets/img/2. body_carousel/pdm-hyundai-hero-banner-mobile-800x500-4.jpg')",
-    "url('../assets/img/2. body_carousel/me-laika-hero-banner-mobile-800x500-4.jpg')"
+    "url('/assets/img/2. body_carousel/aec-factoryos-hero-banner-mobile-800x500-4.jpg')",
+    "url('/assets/img/2. body_carousel/pdm-hyundai-hero-banner-mobile-800x500-4.jpg')",
+    "url('/assets/img/2. body_carousel/me-laika-hero-banner-mobile-800x500-4.jpg')"
 ]
 
 window.addEventListener("load", (e) => {
     if(window.innerWidth >= 768) {
         carouselBanner.style.backgroundImage = bigImgLink[0];
+        
     } else {
         carouselBanner.style.backgroundImage = smallImgLink[0];
     }
 })
+function changeBackground() {
+    if(window.innerWidth >= 768) {
+        carouselBanner.style.backgroundImage = bigImgLink[0];
+    } else {
+        carouselBanner.style.backgroundImage = smallImgLink[0];
+    }
+}
+window.addEventListener('resize', changeBackground);
 
 headingBtns.forEach((headingBtn, index) => {
     const slide = slides[index];
@@ -208,8 +217,8 @@ headingBtns.forEach((headingBtn, index) => {
         coreCarousel.classList.add('active');
         FadeIn(coreCarousel)
         FadeIn(slide)
-        FadeIn(carouselBanner[0])
-        changeBackgroundImage(carouselBanner[0], index);
+        FadeIn(carouselBanner)
+        changeBackgroundImage(carouselBanner, index);
     }
 });
 
@@ -253,8 +262,8 @@ function prevBtnActive(activeNum) {
             coreCarousels[2].classList.add('active');
             FadeIn(coreCarousels[2])
             FadeIn(slides[2])
-            FadeIn(carouselBanner[0])
-            changeBackgroundImage(carouselBanner[0], 2)
+            FadeIn(carouselBanner)
+            changeBackgroundImage(carouselBanner, 2)
             break;
         case 1:
             headingBtns[1].classList.remove('active');
@@ -265,8 +274,8 @@ function prevBtnActive(activeNum) {
             coreCarousels[0].classList.add('active');
             FadeIn(coreCarousels[0])
             FadeIn(slides[0])
-            FadeIn(carouselBanner[0])
-            changeBackgroundImage(carouselBanner[0], 0)
+            FadeIn(carouselBanner)
+            changeBackgroundImage(carouselBanner, 0)
             break;
         case 2:
             headingBtns[2].classList.remove('active');
@@ -277,8 +286,8 @@ function prevBtnActive(activeNum) {
             coreCarousels[1].classList.add('active');
             FadeIn(coreCarousels[1])
             FadeIn(slides[1])
-            FadeIn(carouselBanner[0])
-            changeBackgroundImage(carouselBanner[0], 1)
+            FadeIn(carouselBanner)
+            changeBackgroundImage(carouselBanner, 1)
             break;
     }
 }
@@ -293,8 +302,8 @@ function nextBtnActive(activeNum) {
             coreCarousels[0].classList.add('active');
             FadeIn(coreCarousels[0])
             FadeIn(slides[0])
-            FadeIn(carouselBanner[0])
-            changeBackgroundImage(carouselBanner[0], 0)
+            FadeIn(carouselBanner)
+            changeBackgroundImage(carouselBanner, 0)
             break;
         case 1:
             headingBtns[1].classList.remove('active');
@@ -305,8 +314,8 @@ function nextBtnActive(activeNum) {
             coreCarousels[2].classList.add('active');
             FadeIn(coreCarousels[2])
             FadeIn(slides[2])
-            FadeIn(carouselBanner[0])
-            changeBackgroundImage(carouselBanner[0], 2)
+            FadeIn(carouselBanner)
+            changeBackgroundImage(carouselBanner, 2)
             break;
         case 0:
             headingBtns[0].classList.remove('active');
@@ -317,8 +326,8 @@ function nextBtnActive(activeNum) {
             coreCarousels[1].classList.add('active');
             FadeIn(coreCarousels[1])
             FadeIn(slides[1])
-            FadeIn(carouselBanner[0])
-            changeBackgroundImage(carouselBanner[0], 1)
+            FadeIn(carouselBanner)
+            changeBackgroundImage(carouselBanner, 1)
             break;
     }
 }
