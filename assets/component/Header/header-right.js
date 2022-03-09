@@ -2,6 +2,7 @@ import html from "../../js/core.js";
 import header_right_language from "../Header/header-right-language.js"
 import mobile_language from "../Mobile/mobile-language.js"
 import mobile_search from "../Mobile/mobile-search.js";
+import header_right_account from "./header-right-account.js";
 
 function header_right() {
     return html`
@@ -83,13 +84,7 @@ function header_right() {
                         <img class="right-account__img" src="./assets/img/1. header_navbar/navbar/x40.jpg" alt="avatar">
                     </div>
                 </button>
-                <div class="right-account__panel-container">
-                    <div class="right-account__panel-inner-container">
-                        <div class="right-account__content">
-                            <!-- html of account information here -->
-                        </div>
-                    </div>
-                </div>
+                ${header_right_account()}
             </div>
         </div>
     `

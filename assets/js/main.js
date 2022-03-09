@@ -4,6 +4,14 @@ import App from "../component/App.js";
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
+function clearAll() {
+    navMobile.classList.remove('active');
+    rightTaskContainer.classList.remove('active')
+    mobileLanguageWindow.classList.remove('active')
+    pcLanguageWindow.classList.remove('active')
+    accountPopup.classList.remove('active')
+    closeNavPopups()
+}
 // #region 1. Render html
 function renderHtml(inputElement, html) {
         const output = html()
@@ -20,14 +28,6 @@ if (appElement) {
 const navBtn = $$('.nav__btn')
 var tranOverlay = document.getElementById('tranOverlay');
 var darkOverlay = document.getElementById('darkOverlay');
-
-function clearAll() {
-    navMobile.classList.remove('active');
-    rightTaskContainer.classList.remove('active')
-    mobileLanguageWindow.classList.remove('active')
-    pcLanguageWindow.classList.remove('active') 
-    closeNavPopups()
-}
 
 if (tranOverlay) {            
     tranOverlay.onclick = function() {
@@ -415,6 +415,20 @@ closeSearchIcon.onclick = function() {
     searchPopupMobile.classList.remove('active')
 }
 
+// #endregion
 
+// #region 7. Account Button
+var accountBtn = $('.right-account__btn')
+var accountPopup = $('.right-account__panel-container')
+accountBtn.onclick = function() {
+    if (accountPopup.classList.contains('active')) {
+        accountPopup.classList.remove('active')
+        tranOverlay.classList.remove("active")
+    }
+    else {
+        accountPopup.classList.add('active')
+        tranOverlay.classList.add("active")
+    }
+}
 
 // #endregion

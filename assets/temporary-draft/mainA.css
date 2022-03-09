@@ -333,7 +333,7 @@ ul {
 }
 
 
-.header__navbar-account--panel-container {
+.right-account__panel-container {
     --margin-left: 16px;
     position: relative;
     width: 275px;
@@ -341,11 +341,11 @@ ul {
     top: 8px;
     display: none;
 }
-.header__navbar-account-btn:focus ~ .header__navbar-account--panel-container {
+.header__navbar-account-btn:focus ~ .right-account__panel-container {
     display: block;
 }
-
-.header__navbar-account--panel-container-inner {
+/* right-account__  */
+.right-account__panel-inner-container {
     width: 275px;
     height: 650px;
     background-color: rgb(255, 255, 255);
@@ -353,7 +353,7 @@ ul {
     border-radius: 4px;
     
 }
-.header__navbar-account--content::before {
+.right-account__content::before {
     content: "";
     border-style: solid;
     border-width: 16px 16px;
@@ -362,7 +362,7 @@ ul {
     top: -25px;
     right: 10px;
 }
-.header__navbar-account--content-profile {
+.right-account__content-profile {
     color: var(--black-color);
     height: 124px;
     position: relative;
@@ -401,16 +401,16 @@ ul {
 .sign-out-button--text {
     margin: 0;
 }
-.header__navbar-account--category-wrapper {
+.right-account__category-wrapper {
     color: var(--black-color);
     margin-left: calc(var(--margin-left) - 4px);
     position: relative;
     height: 176.6px;
 }
-.header__navbar-account--category-heading {
+.right-account__category-heading {
     position: relative;
 }
-.header__navbar-account--category-heading::after {
+.right-account__category-heading::after {
     content: "";
     position: absolute;
     border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -419,31 +419,31 @@ ul {
     left: calc(var(--margin-left) * -1 + 4px);
 }
 
-.header__navbar-account--category-heading-content {
+.right-account__category-heading-content {
     display: flex;
     margin: 0;
     justify-content: flex-start;
     align-items: center;
     padding-top: 9px;
 }
-.header__navbar-account--category-heading-icon {
+.right-account__category-heading-icon {
     margin-right: 10px;
 }
 
-.header__navbar-account--category-heading {
+.right-account__category-heading {
     color: var(--black-color);
     font-size: 1.5rem;
     font-family: 'artifakt-bold', fantasy;
     cursor: pointer;
 
 }
-.header__navbar-account--category-link {
+.right-account__category-link {
     color: var(--black-color);
     font-size: 1.4rem;
     cursor: pointer;
 
 }
-.header__navbar-account--category-link-text {
+.right-account__category-link-text {
     margin: 7px 0px 21px 34px;
 
 }

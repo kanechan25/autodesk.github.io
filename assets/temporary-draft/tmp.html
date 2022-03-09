@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KHOA | 3D Design, Engineering & Construction Software</title>
+        <link rel="icon" href="./assets/img/1. header_navbar/autodesk-logo.png" sizes="any" type="image/svg+xml"/>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="./assets/css/keyframes.css">
+        <link rel="stylesheet" href="./assets/scss/main.css">
+        <link rel="stylesheet" href="./assets/scss/responsive.css">
+    </head>
+<body>
+    <div class="app">
+
+        <div class="app__header">
+            <div class="grid wide">
+                <header class="header col">
+                    <div class="header__left">
+
+                        <div class="header__left-mini-bar">
+                            <i class="fas fa-bars"></i>
+                        </div>
+
+                        <div class="header__left-logo">
+                            <a class="autodesk-logo" href="https://www.autodesk.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1619.27 166.13">
+                                    <path class="autodesk-logo-new" fill="#fff"
+                                        d="M1619.27 4.34h-47.94l-57.42 64.12V4.34h-40.25l.2 157.84h40.05V102.2l54.46 59.98h50.9l-73.39-77.93 73.39-79.91zm-210.51 64.91l-36.7-4.14c-21.51-2.37-26.83-7.7-26.83-15 0-8.09 11.05-15.39 32.55-15.39 20.72 0 31.57 7.7 33.54 19.34h39.46c-2-33.35-30-54.06-70.83-54.06-48.53 0-73 19.33-73 53.46 0 27.82 16.18 40.85 49.72 44.4l37.29 3.94c14.21 1.58 20.72 7.11 20.72 14.21 0 8.09-9.47 15.39-32.36 15.39-26.44 0-37.09-6.71-38.87-20.13h-38.67c1.78 36.31 25.45 54.85 76.16 54.85 46.36 0 72.21-20.32 72.21-50.9 0-26.64-15.39-42.62-44.39-45.97zm-248.8 92.93h127.06v-34.13h-86.81V99.44h69.84V65.11h-69.84V38.47h86.81V4.34h-127.06v157.84zm-94.7-157.84h-73.79v157.84h73.79c56.63 0 72.21-21.11 72.21-80.11 0-55.44-14.99-77.73-72.21-77.73zm-1.62 123.72h-32V38.47h32c25.26 0 32.75 6.91 32.75 43.6.04 33.54-8.44 45.99-32.75 45.99zM882.17 0c-57.42 0-87.21 35.31-87.21 82.86 0 47.75 29.79 83.26 87.21 83.26 57.61 0 87.4-35.51 87.4-83.26 0-47.55-29.79-82.86-87.4-82.86zm0 130.61c-29.79 0-46.17-18.15-46.17-47.75 0-29 16.38-47.35 46.17-47.35 30 0 46.17 18.35 46.17 47.35 0 29.6-16.18 47.75-46.17 47.75zM646.59 38.47h50.9v123.71h40.25V38.47h50.71V4.34H646.59v34.13zM588 101.8c0 20.52-12.63 28.81-34.14 28.81-20.91 0-34.52-8.68-34.52-28.81V4.34h-40.25v102c0 45.58 40.64 59.78 74.77 59.78 33.94 0 74.38-14.2 74.38-59.78v-102H588zM361.3 4.34l-60.57 157.84h41.63l10.57-29.6h67.62l10.4 29.6h43L412.64 4.34zm3.61 94.7l22.11-61.87 21.74 61.89zM1.24 162.19l141.34-87.92h73.32a4.28 4.28 0 014.28 4.29 3.72 3.72 0 01-2 3.6l-69.42 41.62c-4.51 2.7-6.09 8.12-6.09 12.18l-.07 26.23h88.22V9.75a5.41 5.41 0 00-5.64-5.42H141L0 91.87v70.32z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="header__left-search">
+                            <div class="left-search__wrap">
+                                <svg class="header__search-icon left" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                    <path class="header__search-icon-logo" stroke-linecap="round" stroke-width="1.5"
+                                        d="M15.028 15.334l4.644 4.644m-2.889-8.88a5.99 5.99 0 01-5.991 5.991 5.99 5.99 0 110-11.983 5.99 5.99 0 015.991 5.992z">
+                                    </path>
+                                </svg>
+                                <input class="left-search__input" type="text">
+                                <div class="left-search__history">
+                                    <h3 class="left-search__history-heading">Recent searches will appear here</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__right-search-mini">
+                            <svg class="header__search-icon right" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                <path class="header__search-icon-logo" stroke-linecap="round" stroke-width="1.5"
+                                    d="M15.028 15.334l4.644 4.644m-2.889-8.88a5.99 5.99 0 01-5.991 5.991 5.99 5.99 0 110-11.983 5.99 5.99 0 015.991 5.992z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="header__right-cart">
+                            <a class="right-cart__wrap" target="_blank"
+                                href="https://checkout.autodesk.com/en-US?currency=USD">
+                                <svg class="right-cart__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path
+                                        d="M17.6 14.3H5.9c-.3 0-.5-.2-.6-.5L2.8 1.2H0V0h3.2c.3 0 .5.2.6.5l2.5 12.6 10.8.1 1.7-8.1 1.2.2-1.8 8.5c0 .3-.3.5-.6.5z"
+                                        fill="#fff"></path>
+                                    <circle cx="7.2" cy="18" r="2" fill="#fff"></circle>
+                                    <circle cx="16.3" cy="18" r="2" fill="#fff"></circle>
+                                </svg>
+                                <span class="right-cart__notice">3</span>
+                            </a>
+                        </div>
+                        <div class="header__right-language">
+                            <button class="right-language__btn">
+                                <svg class="right-language__icon" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 21 21">
+                                    <path fill="#fff"
+                                        d="M12.9.4C11.9.1 11 0 10 0S8.1.1 7.2.4C3 1.6 0 5.5 0 10c0 5.5 4.5 10 10 10s10-4.5 10-10c0-4.5-3-8.3-7.1-9.6zm-11.8 10h3.5c0 1.2.2 2.3.4 3.3H1.9c-.5-1-.7-2.1-.8-3.3zm9.5-5.5V1.1c.6 0 1.1.1 1.7.3.3.5 1 1.7 1.5 3.6l-3.2-.1zM14 6c.2 1 .3 2.1.3 3.4h-3.8V6H14zM9.5 4.9H6.4c.5-1.8 1.2-3 1.5-3.5.5-.1 1.1-.2 1.6-.2v3.7zm0 1.1v3.4H5.7c0-1.3.1-2.4.3-3.4h3.5zM4.6 9.4H1.1c.1-1.2.4-2.4 1-3.4h2.8c-.2 1-.3 2.1-.3 3.4zm1.1 1.1h3.7v3.3H6.1c-.2-1.1-.3-2.1-.4-3.3zm3.8 4.3v4c-.6 0-1.1-.1-1.7-.3-.2-.3-.9-1.7-1.4-3.8l3.1.1zm1.1 0h3.1c-.5 2.1-1.2 3.4-1.4 3.7-.6.1-1.1.2-1.7.3v-4zm0-1.1v-3.3h3.8c-.1 1.2-.2 2.3-.4 3.3h-3.4zm4.8-3.2h3.5c-.1 1.2-.4 2.3-.8 3.3h-3c.1-1 .3-2.1.3-3.3zm0-1.1c0-1.3-.1-2.4-.3-3.4H18c.5 1 .8 2.2.9 3.4h-3.5zM17.3 5h-2.4c-.3-1.3-.7-2.2-1.1-3 1.4.6 2.6 1.7 3.5 3zM6.2 1.9c-.3.8-.7 1.7-1 3H2.8c.8-1.3 2-2.3 3.4-3zM2.5 14.8h2.7c.3 1.4.7 2.5 1.1 3.3-1.6-.7-2.9-1.9-3.8-3.3zm11.2 3.3c.3-.7.7-1.8 1.1-3.2h2.6c-.9 1.4-2.2 2.5-3.7 3.2z">
+                                    </path>
+                                </svg>
+                                <span class="right-language__text">US</span>
+                            </button>
+                            <div class="right-language__list">
+                                <div class="right-language__selector">
+                                    <!-- html of language list here-->
+                                    <div class="right-language__wrap">
+                                        <ul class="right-language__selector-header">
+                                            <li class="right-language__selector-heading">Suggested Location:</li>
+                                            <li class="right-language__selector-item language-selected"
+                                                data-locale="en-US" data-testid="right-language__selector-li-en-US">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-en-US">
+                                                    <div>United States</div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"
+                                                        class="language-selector__small-checkmark-icon">
+                                                        <path fill="#4d4d4d"
+                                                            d="M3.52 6.15a.65.65 0 01-.43-.17L0 3.11l.86-.93L3.5 4.64 8.1 0l.9.89-5.03 5.07c-.12.13-.28.19-.45.19z">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-heading">Available Sites:</li>
+                                        </ul>
+                                        <ul class="right-language__selector-container" aria-label="all languages">
+                                            <li class="right-language__selector-item" data-locale="en-AU"
+                                                data-testid="right-language__selector-li-en-AU">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-en-AU">
+                                                    Australia
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="nl-BE"
+                                                data-testid="right-language__selector-li-nl-BE">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-nl-BE">
+                                                    België
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="fr-BE"
+                                                data-testid="right-language__selector-li-fr-BE">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-fr-BE">
+                                                    Belgique
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="pt-BR"
+                                                data-testid="right-language__selector-li-pt-BR">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-pt-BR">
+                                                    Brasil
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="en-CA"
+                                                data-testid="right-language__selector-li-en-CA">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-en-CA">
+                                                    Canada (English)
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="fr-CA"
+                                                data-testid="right-language__selector-li-fr-CA">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-fr-CA">
+                                                    Canada (Français)
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="cs-CZ"
+                                                data-testid="right-language__selector-li-cs-CZ">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-cs-CZ">
+                                                    Česko
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="da-DK"
+                                                data-testid="right-language__selector-li-da-DK">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-da-DK">
+                                                    Danmark
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="de-DE"
+                                                data-testid="right-language__selector-li-de-DE">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-de-DE">
+                                                    Deutschland
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="es-ES"
+                                                data-testid="right-language__selector-li-es-ES">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-es-ES">
+                                                    España
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="en-NL"
+                                                data-testid="right-language__selector-li-en-NL">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-en-NL">
+                                                    Europe (English)
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="fr-FR"
+                                                data-testid="right-language__selector-li-fr-FR">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-fr-FR">
+                                                    France
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="en-HK"
+                                                data-testid="right-language__selector-li-en-HK">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-en-HK">
+                                                    Hong Kong (English)
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="en-IN"
+                                                data-testid="right-language__selector-li-en-IN">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-en-IN">
+                                                    India (English)
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="it-IT"
+                                                data-testid="right-language__selector-li-it-IT">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-it-IT">
+                                                    Italia
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="es-AR"
+                                                data-testid="right-language__selector-li-es-AR">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-es-AR">
+                                                    Latinoamérica
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="hu-HU"
+                                                data-testid="right-language__selector-li-hu-HU">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-hu-HU">
+                                                    Magyarország
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="en-MY"
+                                                data-testid="right-language__selector-li-en-MY">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-en-MY">
+                                                    Malaysia (English)
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="es-MX"
+                                                data-testid="right-language__selector-li-es-MX">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-es-MX">
+                                                    México
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="en-AE"
+                                                data-testid="right-language__selector-li-en-AE">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-en-AE">
+                                                    Middle East (English)
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="nl-NL"
+                                                data-testid="right-language__selector-li-nl-NL">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-nl-NL">
+                                                    Nederland
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="en-NZ"
+                                                data-testid="right-language__selector-li-en-NZ">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-en-NZ">
+                                                    New Zealand
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="no-NO"
+                                                data-testid="right-language__selector-li-no-NO">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-no-NO">
+                                                    Norge
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="de-AT"
+                                                data-testid="right-language__selector-li-de-AT">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-de-AT">
+                                                    Österreich
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="pl-PL"
+                                                data-testid="right-language__selector-li-pl-PL">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-pl-PL">
+                                                    Polska
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="pt-PT"
+                                                data-testid="right-language__selector-li-pt-PT">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-pt-PT">
+                                                    Portugal
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="en-SG"
+                                                data-testid="right-language__selector-li-en-SG">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-en-SG">
+                                                    Singapore (English)
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="fi-FI"
+                                                data-testid="right-language__selector-li-fi-FI">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-fi-FI">
+                                                    Suomi
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="sv-SE"
+                                                data-testid="right-language__selector-li-sv-SE">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-sv-SE">
+                                                    Sverige
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="de-CH"
+                                                data-testid="right-language__selector-li-de-CH">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-de-CH">
+                                                    Schweiz
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="en-ZA"
+                                                data-testid="right-language__selector-li-en-ZA">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-en-ZA">
+                                                    South Africa (English>
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="fr-CH"
+                                                data-testid="right-language__selector-li-fr-CH">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-fr-CH">
+                                                    Suisse
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="it-CH"
+                                                data-testid="right-language__selector-li-it-CH">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-it-CH">
+                                                    Svizzera
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="tr-TR"
+                                                data-testid="right-language__selector-li-tr-TR">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-tr-TR">
+                                                    Türkiye
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="en-GB"
+                                                data-testid="right-language__selector-li-en-GB">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-en-GB">
+                                                    United Kingdom
+                                                </a>
+                                            </li>
+
+                                            <li class="right-language__selector-item" data-locale="ru-RU"
+                                                data-testid="right-language__selector-li-ru-RU">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-ru-RU">
+                                                    Россия
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="zh-CN"
+                                                data-testid="right-language__selector-li-zh-CN">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-zh-CN">
+                                                    中国大陆地区
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="zh-TW"
+                                                data-testid="right-language__selector-li-zh-TW">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-zh-TW">
+                                                    台灣
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="ja-JP"
+                                                data-testid="right-language__selector-li-ja-JP">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-ja-JP">
+                                                    日本
+                                                </a>
+                                            </li>
+                                            <li class="right-language__selector-item" data-locale="ko-KR"
+                                                data-testid="right-language__selector-li-ko-KR">
+                                                <a class="right-language__selector-a"
+                                                    data-testid="right-language__selector-item-ko-KR">
+                                                    한국­
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="header__right-mini-dot">
+                            <i class="fas fa-ellipsis-h"></i>
+                            <div class="right-task-container">
+                                <ul class="right-task">
+                                    <li class="right-task-icon search-wrap">
+                                        <div class="task__search-mini">
+                                            <svg class="header__search-icon right" xmlns="http://www.w3.org/2000/svg"
+                                                fill="none">
+                                                <path class="header__search-icon-logo" stroke-linecap="round"
+                                                    stroke-width="1.5"
+                                                    d="M15.028 15.334l4.644 4.644m-2.889-8.88a5.99 5.99 0 01-5.991 5.991 5.99 5.99 0 110-11.983 5.99 5.99 0 015.991 5.992z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="right-task-icon cart-wrap">
+                                        <div class="task__cart">
+                                            <a class="right-cart__wrap" target="_blank"
+                                                href="https://checkout.autodesk.com/en-US?currency=USD">
+                                                <svg class="right-cart__icon" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20">
+                                                    <path fill="#000"
+                                                        d="M17.6 14.3H5.9c-.3 0-.5-.2-.6-.5L2.8 1.2H0V0h3.2c.3 0 .5.2.6.5l2.5 12.6 10.8.1 1.7-8.1 1.2.2-1.8 8.5c0 .3-.3.5-.6.5z">
+                                                    </path>
+                                                    <circle cx="7.2" cy="18" r="2" fill="#000"></circle>
+                                                    <circle cx="16.3" cy="18" r="2" fill="#000"></circle>
+                                                </svg>
+                                                <span class="right-cart__notice">3</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="right-task-icon language-wrap">
+                                        <div class="task__language">
+                                            <div class="right-language__btn">
+                                                <svg class="right-language__icon" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 21 21">
+                                                    <path fill="#000"
+                                                        d="M12.9.4C11.9.1 11 0 10 0S8.1.1 7.2.4C3 1.6 0 5.5 0 10c0 5.5 4.5 10 10 10s10-4.5 10-10c0-4.5-3-8.3-7.1-9.6zm-11.8 10h3.5c0 1.2.2 2.3.4 3.3H1.9c-.5-1-.7-2.1-.8-3.3zm9.5-5.5V1.1c.6 0 1.1.1 1.7.3.3.5 1 1.7 1.5 3.6l-3.2-.1zM14 6c.2 1 .3 2.1.3 3.4h-3.8V6H14zM9.5 4.9H6.4c.5-1.8 1.2-3 1.5-3.5.5-.1 1.1-.2 1.6-.2v3.7zm0 1.1v3.4H5.7c0-1.3.1-2.4.3-3.4h3.5zM4.6 9.4H1.1c.1-1.2.4-2.4 1-3.4h2.8c-.2 1-.3 2.1-.3 3.4zm1.1 1.1h3.7v3.3H6.1c-.2-1.1-.3-2.1-.4-3.3zm3.8 4.3v4c-.6 0-1.1-.1-1.7-.3-.2-.3-.9-1.7-1.4-3.8l3.1.1zm1.1 0h3.1c-.5 2.1-1.2 3.4-1.4 3.7-.6.1-1.1.2-1.7.3v-4zm0-1.1v-3.3h3.8c-.1 1.2-.2 2.3-.4 3.3h-3.4zm4.8-3.2h3.5c-.1 1.2-.4 2.3-.8 3.3h-3c.1-1 .3-2.1.3-3.3zm0-1.1c0-1.3-.1-2.4-.3-3.4H18c.5 1 .8 2.2.9 3.4h-3.5zM17.3 5h-2.4c-.3-1.3-.7-2.2-1.1-3 1.4.6 2.6 1.7 3.5 3zM6.2 1.9c-.3.8-.7 1.7-1 3H2.8c.8-1.3 2-2.3 3.4-3zM2.5 14.8h2.7c.3 1.4.7 2.5 1.1 3.3-1.6-.7-2.9-1.9-3.8-3.3zm11.2 3.3c.3-.7.7-1.8 1.1-3.2h2.6c-.9 1.4-2.2 2.5-3.7 3.2z">
+                                                    </path>
+                                                </svg>
+                                                <span class="right-language__text">US</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </button>
+                        <div class="header__right-account">
+                            <button class="right-account__btn">
+                                <div class="right-account__wrap">
+                                    <img class="right-account__img" src="./assets/img/1. header_navbar/navbar/x40.jpg"
+                                        alt="avatar">
+                                </div>
+                            </button>
+                            <div class="right-account__panel-container active">
+                                <div class="right-account__panel-inner-container">
+                                    <!-- html of account information here -->
+                                    <div class="right-account__content">
+                                        <div class="right-account__content-profile">
+                                            <p class="right-account__category-name-text">TRAN Van Khoa</p>
+                                            <p class="content-profile__email">kt.itengineer@gmail.com</p>
+                                            <div class="content-profile__sign-out">
+                                                <button class="content-profile__sign-out-button">
+                                                    <p class="sign-out-button-text">Sign out</p>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="right-account__category-wrapper">
+                                            <a class="right-account__category-heading">
+                                                <div class="right-account__category-heading-content">
+                                                    <div class="right-account__category-heading-icon">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3 19.3245L21 19.3245L21 6.61862L9.35294 6.61862L9.35294 4.50098L3 4.50098L3 19.3245Z"
+                                                                stroke="black" stroke-width="1.5" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="right-account__category-heading-text">My account</p>
+                                                </div>
+                                            </a>
+                                            <a class="right-account__category-link">
+                                                <p class="right-account__category-link-text">Products and services</p>
+                                            </a>
+                                            <a class="right-account__category-link">
+                                                <p class="right-account__category-link-text">Product updates</p>
+                                            </a>
+                                            <a class="right-account__category-link">
+                                                <p class="right-account__category-link-text">Trials</p>
+                                            </a>
+                                        </div>
+                                        <div class="right-account__category-wrapper">
+                                            <a class="right-account__category-heading">
+                                                <div class="right-account__category-heading-content">
+                                                    <div class="right-account__category-heading-icon">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M18.87 19.1345C17.6251 16.5976 15.0165 14.8513 12 14.8513C8.9835 14.8513 6.37488 16.5976 5.13 19.1345M14.9 9.33297C14.9 10.9898 13.6016 12.333 12 12.333C10.3984 12.333 9.1 10.9898 9.1 9.33297C9.1 7.67612 10.3984 6.33297 12 6.33297C13.6016 6.33297 14.9 7.67612 14.9 9.33297ZM22 12.001C22 17.5238 17.5228 22.001 12 22.001C6.47715 22.001 2 17.5238 2 12.001C2 6.47813 6.47715 2.00098 12 2.00098C17.5228 2.00098 22 6.47813 22 12.001Z"
+                                                                stroke="black" stroke-width="1.5" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="right-account__category-heading-text">My profile and settings</p>
+                                                </div>
+                                            </a>
+                                            <a class="right-account__category-link">
+                                                <p class="right-account__category-link-text">Password and security</p>
+                                            </a>
+                                            <a class="right-account__category-link">
+                                                <p class="right-account__category-link-text">Language</p>
+                                            </a>
+                                            <a class="right-account__category-link">
+                                                <p class="right-account__category-link-text">Communications</p>
+                                            </a>
+                                        </div>
+                                        <div class="right-account__category-wrapper">
+                                            <a class="right-account__category-heading">
+                                                <div class="right-account__category-heading-content">
+                                                    <div class="right-account__category-heading-icon"><svg width="24" height="24" viewBox="0 0 24 24"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M2.5 21.001C2.5 17.6938 4.60793 14.001 9.01396 14.001C13.42 14.001 15.5 17.6938 15.5 21.001M21.5 15.501C21.5 13.67 20.3547 11.4473 18.0395 11.4473C15.7242 11.4473 14.5 13.001 14.5 13.001M12.5 7.50098C12.5 9.43397 10.933 11.001 9 11.001C7.067 11.001 5.5 9.43397 5.5 7.50098C5.5 5.56798 7.067 4.00098 9 4.00098C10.933 4.00098 12.5 5.56798 12.5 7.50098ZM20.0395 7.038C20.0395 8.17709 19.1441 9.1005 18.0395 9.1005C16.9349 9.1005 16.0395 8.17709 16.0395 7.038C16.0395 5.89891 16.9349 4.9755 18.0395 4.9755C19.1441 4.9755 20.0395 5.89891 20.0395 7.038Z"
+                                                                stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="right-account__category-heading-text">My community</p>
+                                                </div>
+                                            </a>
+                                            <a class="right-account__category-link">
+                                                <p class="right-account__category-link-text">Community profile</p>
+                                            </a>
+                                            <a class="right-account__category-link">
+                                                <p class="right-account__category-link-text">Contributions</p>
+                                            </a>
+                                            <a class="right-account__category-link">
+                                                <p class="right-account__category-link-text">Forum preferences</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
