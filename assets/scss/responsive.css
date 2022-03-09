@@ -531,7 +531,7 @@
     display: none;
   }
   .carousel-banner {
-    background-image: url("/assets/img/2. body_carousel/aec-factoryos-hero-banner-mobile-800x500-4.jpg");
+    background-image: url("../assets/img/2. body_carousel/aec-factoryos-hero-banner-mobile-800x500-4.jpg");
     background-size: auto 80%;
     background-position: 60% 65%;
     background-repeat: no-repeat;

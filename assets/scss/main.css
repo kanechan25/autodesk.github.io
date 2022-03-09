@@ -1449,7 +1449,7 @@ li {
   height: 612px;
   z-index: 2;
   overflow: hidden;
-  background-image: url("/assets/img/2. body_carousel/aec-factoryos-hero-banner-2000x1200.jpg");
+  background-image: url("..assets/2. body_carousel/aec-factoryos-hero-banner-2000x1200.jpg");
   background-size: auto 197%;
   background-position: center top;
   background-repeat: no-repeat;
@@ -1903,7 +1903,7 @@ li {
   height: 518px;
   margin: 70px 0px;
   background-color: #000;
-  background-image: url("/assets/img/2. body_container/future-of-work-banner-2000x1200-2.jpg");
+  background-image: url("../assets/img/2. body_container/future-of-work-banner-2000x1200-2.jpg");
   background-size: auto 190%;
   background-position: center top;
   background-repeat: no-repeat;
