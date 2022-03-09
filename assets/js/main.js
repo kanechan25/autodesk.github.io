@@ -3,6 +3,18 @@ import App from "../component/App.js";
 
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
+// width >= 768px
+var bigImgLink = [
+    "url('/assets/img/2. body_carousel/aec-factoryos-hero-banner-2000x1200.jpg')",
+    "url('/assets/img/2. body_carousel/pdm-hyundai-hero-banner-2000x1200.jpg')",
+    "url('/assets/img/2. body_carousel/me-laika-hero-banner-2000x1200.jpg')"
+]
+// width < 768px
+var smallImgLink = [
+    "url('/assets/img/2. body_carousel/aec-factoryos-hero-banner-mobile-800x500-4.jpg')",
+    "url('/assets/img/2. body_carousel/pdm-hyundai-hero-banner-mobile-800x500-4.jpg')",
+    "url('/assets/img/2. body_carousel/me-laika-hero-banner-mobile-800x500-4.jpg')"
+]
 
 function clearAll() {
     navMobile.classList.remove('active');
@@ -175,18 +187,8 @@ var prevBtn = $('.prev-slide.control-btn')
 var nextBtn = $('.next-slide.control-btn')
 
 
-// width >= 768px
-var bigImgLink = [
-    "url('/assets/img/2. body_carousel/aec-factoryos-hero-banner-2000x1200.jpg')",
-    "url('/assets/img/2. body_carousel/pdm-hyundai-hero-banner-2000x1200.jpg')",
-    "url('/assets/img/2. body_carousel/me-laika-hero-banner-2000x1200.jpg')"
-]
-// width < 768px
-var smallImgLink = [
-    "url('/assets/img/2. body_carousel/aec-factoryos-hero-banner-mobile-800x500-4.jpg')",
-    "url('/assets/img/2. body_carousel/pdm-hyundai-hero-banner-mobile-800x500-4.jpg')",
-    "url('/assets/img/2. body_carousel/me-laika-hero-banner-mobile-800x500-4.jpg')"
-]
+
+
 
 window.addEventListener("load", (e) => {
     if(window.innerWidth >= 768) {
