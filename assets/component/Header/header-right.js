@@ -81,7 +81,7 @@ function header_right() {
             <div class="header__right-account">
                 <button class="right-account__btn">
                     <div class="right-account__wrap">
-                        <img class="right-account__img" src="./assets/img/1. header_navbar/navbar/x40.jpg" alt="avatar">
+                        <img class="right-account__img" src="./assets/img/1_header_navbar/navbar/x40.jpg" alt="avatar">
                     </div>
                 </button>
                 ${header_right_account()}

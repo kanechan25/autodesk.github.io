@@ -28,7 +28,7 @@ function carousel_core() {
                                     <div class="img-wrap">
                                         <div class="item-img img-gradient">
                                             <h4 class="item-img__copyright-text">Image courtesy of Arcadis</h4>
-                                            <img class="item-link-img" src="./assets/img/2. body_container/AEC/aec-arcadis-thumb-720x480.jpg" alt="image-here">
+                                            <img class="item-link-img" src="./assets/img/2_body_container/AEC/aec-arcadis-thumb-720x480.jpg" alt="image-here">
                                         </div>
                                     </div>
                                 </a>
@@ -54,7 +54,7 @@ function carousel_core() {
                                     <div class="img-wrap">
                                         <div class="item-img">
                                             <img class="item-link-img"
-                                                src="./assets/img/2. body_container/AEC/aec-collections--thumb-720x480.jpg" alt="image-here">
+                                                src="./assets/img/2_body_container/AEC/aec-collections--thumb-720x480.jpg" alt="image-here">
                                         </div>
                                     </div>
                                 </a>
@@ -80,7 +80,7 @@ function carousel_core() {
                                     <div class="img-wrap">
                                         <div class="item-img">
                                             <img class="item-link-img"
-                                                src="./assets/img/2. body_container/AEC/aec-construction-cloud-thumb-720x480.jpg" alt="image-here">
+                                                src="./assets/img/2_body_container/AEC/aec-construction-cloud-thumb-720x480.jpg" alt="image-here">
                                         </div>
                                     </div>
                                 </a>
@@ -106,7 +106,7 @@ function carousel_core() {
                                     <div class="img-wrap xl-6 lg-6">
                                         <div class="item-img">
                                             <img class="item-link-img"
-                                                src="./assets/img/2. body_container/AEC/aec-industry-solutions-thumb-720x480.jpg" alt="image-here">
+                                                src="./assets/img/2_body_container/AEC/aec-industry-solutions-thumb-720x480.jpg" alt="image-here">
                                         </div>
                                     </div>
                                 </a>
@@ -121,15 +121,15 @@ function carousel_core() {
                                         </div>
                                         <div class="row">
                                             <div class="item-content__buy col xl-12 lg-12 l-4 m-12 c-12">
-                                                <img class="item-content__img-buy" src="./assets/img/2. body_container/banner-carlendar.png" alt="image-here">
+                                                <img class="item-content__img-buy" src="./assets/img/2_body_container/banner-carlendar.png" alt="image-here">
                                                 <h4 class="item-content__buy-text">Lock in your savings for 3 years</h4>
                                             </div>
                                             <div class="item-content__buy col xl-12 lg-12 l-4 m-12 c-12">
-                                                <img class="item-content__img-buy" src="./assets/img/2. body_container/banner-clock.png" alt="image-here">
+                                                <img class="item-content__img-buy" src="./assets/img/2_body_container/banner-clock.png" alt="image-here">
                                                 <h4 class="item-content__buy-text">Pay as you go with Flex for occasional product use</h4>
                                             </div>
                                             <div class="item-content__buy col xl-12 lg-12 l-4 m-12 c-12">
-                                                <img class="item-content__img-buy" src="./assets/img/2. body_container/banner-guarantee.png" alt="image-here">
+                                                <img class="item-content__img-buy" src="./assets/img/2_body_container/banner-guarantee.png" alt="image-here">
                                                 <h4 class="item-content__buy-text">Enjoy a 30-day money-back guarantee</h4>
                                             </div>
                                         </div>
@@ -170,7 +170,7 @@ function carousel_core() {
                                     </div>
                                     <div class="img-wrap">
                                         <div class="item-img">
-                                            <img class="item-link-img" src="./assets/img/2. body_container/Design/pdm-odico-thumb-720x480.jpg" alt="image-here">
+                                            <img class="item-link-img" src="./assets/img/2_body_container/Design/pdm-odico-thumb-720x480.jpg" alt="image-here">
                                         </div>
                                     </div>
                                 </a>
@@ -196,7 +196,7 @@ function carousel_core() {
                                     <div class="img-wrap">
                                         <div class="item-img">
                                             <img class="item-link-img"
-                                                src="./assets/img/2. body_container/Design/pdm-collection-thumb-720x480.jpg" alt="image-here">
+                                                src="./assets/img/2_body_container/Design/pdm-collection-thumb-720x480.jpg" alt="image-here">
                                         </div>
                                     </div>
                                 </a>
@@ -222,7 +222,7 @@ function carousel_core() {
                                     <div class="img-wrap">
                                         <div class="item-img">
                                             <img class="item-link-img"
-                                                src="./assets/img/2. body_container/Design/pdm-industry-solutions-thumb-720x480.jpg" alt="image-here">
+                                                src="./assets/img/2_body_container/Design/pdm-industry-solutions-thumb-720x480.jpg" alt="image-here">
                                         </div>
                                     </div>
                                 </a>
@@ -237,15 +237,15 @@ function carousel_core() {
                                         </div>
                                         <div class="row">
                                             <div class="item-content__buy col xl-3 lg-3 l-12 m-12 c-12">
-                                                <img class="item-content__img-buy" src="./assets/img/2. body_container/banner-carlendar.png" alt="image-here">
+                                                <img class="item-content__img-buy" src="./assets/img/2_body_container/banner-carlendar.png" alt="image-here">
                                                 <h4 class="item-content__buy-text">Lock in your savings for 3 years</h4>
                                             </div>
                                             <div class="item-content__buy col xl-3 lg-3 l-12 m-12 c-12">
-                                                <img class="item-content__img-buy" src="./assets/img/2. body_container/banner-clock.png" alt="image-here">
+                                                <img class="item-content__img-buy" src="./assets/img/2_body_container/banner-clock.png" alt="image-here">
                                                 <h4 class="item-content__buy-text">Pay as you go with Flex for occasional product use</h4>
                                             </div>
                                             <div class="item-content__buy col xl-3 lg-3 l-12 m-12 c-12">
-                                                <img class="item-content__img-buy" src="./assets/img/2. body_container/banner-guarantee.png" alt="image-here">
+                                                <img class="item-content__img-buy" src="./assets/img/2_body_container/banner-guarantee.png" alt="image-here">
                                                 <h4 class="item-content__buy-text">Enjoy a 30-day money-back guarantee</h4>
                                             </div>
                                             <div class="direction-wrap col xl-3 lg-3 l-12 m-12 c-12">
@@ -287,7 +287,7 @@ function carousel_core() {
                                     <div class="img-wrap">
                                         <div class="item-img img-gradient">
                                             <h4 class="item-img__copyright-text">Image courtesy of Cinzia Angleini</h4>
-                                            <img class="item-link-img" src="./assets/img/2. body_container/Media/me-mila-thumb-720x480.jpg" alt="image-here">
+                                            <img class="item-link-img" src="./assets/img/2_body_container/Media/me-mila-thumb-720x480.jpg" alt="image-here">
                                         </div>
                                     </div>
                                 </a>
@@ -313,7 +313,7 @@ function carousel_core() {
                                     <div class="img-wrap">
                                         <div class="item-img img-gradient">
                                             <h4 class="item-img__copyright-text">Image courtesy of Pixomondo</h4>
-                                            <img class="item-link-img" src="./assets/img/2. body_container/Media/me-collection-thumb-720x480.jpg" alt="image-here">
+                                            <img class="item-link-img" src="./assets/img/2_body_container/Media/me-collection-thumb-720x480.jpg" alt="image-here">
                                         </div>
                                     </div>
                                 </a>
@@ -339,7 +339,7 @@ function carousel_core() {
                                     <div class="img-wrap">
                                         <div class="item-img img-gradient">
                                             <h4 class="item-img__copyright-text">Image courtesy of Elizabeth Ku-Herrero on behalf of the Talking the Plunge team</h4>
-                                            <img class="item-link-img" src="./assets/img/2. body_container/Media/me-industry-solutions-thumb-720x480.jpg" alt="image-here">
+                                            <img class="item-link-img" src="./assets/img/2_body_container/Media/me-industry-solutions-thumb-720x480.jpg" alt="image-here">
                                         </div>
                                     </div>
                                 </a>
@@ -354,15 +354,15 @@ function carousel_core() {
                                         </div>
                                         <div class="row">
                                             <div class="item-content__buy col xl-3 lg-3 l-12 m-12 c-12">
-                                                <img class="item-content__img-buy" src="./assets/img/2. body_container/banner-carlendar.png" alt="image-here">
+                                                <img class="item-content__img-buy" src="./assets/img/2_body_container/banner-carlendar.png" alt="image-here">
                                                 <h4 class="item-content__buy-text">Lock in your savings for 3 years</h4>
                                             </div>
                                             <div class="item-content__buy col xl-3 lg-3 l-12 m-12 c-12">
-                                                <img class="item-content__img-buy" src="./assets/img/2. body_container/banner-clock.png" alt="image-here">
+                                                <img class="item-content__img-buy" src="./assets/img/2_body_container/banner-clock.png" alt="image-here">
                                                 <h4 class="item-content__buy-text">Pay as you go with Flex for occasional product use</h4>
                                             </div>
                                             <div class="item-content__buy col xl-3 lg-3 l-12 m-12 c-12">
-                                                <img class="item-content__img-buy" src="./assets/img/2. body_container/banner-guarantee.png" alt="image-here">
+                                                <img class="item-content__img-buy" src="./assets/img/2_body_container/banner-guarantee.png" alt="image-here">
                                                 <h4 class="item-content__buy-text">Enjoy a 30-day money-back guarantee</h4>
                                             </div>
                                             <div class="direction-wrap col xl-3 lg-3 l-12 m-12 c-12">

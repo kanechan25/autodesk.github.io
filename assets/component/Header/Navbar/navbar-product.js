@@ -11,7 +11,7 @@ function navbar_product() {
                                 <div class="navbar__product-item-products col xl-4 lg-4">
                                     <div class="item-products__collection-title">Architecture, Engineering<br> &amp; Construction </div>
                                     <a class="item-products__collection-box" href="https://www.autodesk.com/collections/architecture-engineering-construction/overview" target="__blank">
-                                        <img src="./assets/img/1. header_navbar/fixedbar/architecture-engineering-construction-collection-uhblack-banner-lockup-364x40.png" alt="aec logo">
+                                        <img src="./assets/img/1_header_navbar/fixedbar/architecture-engineering-construction-collection-uhblack-banner-lockup-364x40.png" alt="aec logo">
                                         <p>Integrated BIM tools, including Revit, AutoCAD, and Civil 3D</p>
                                     </a>
                                     <div class="item-products__collection-list">
@@ -32,7 +32,7 @@ function navbar_product() {
                                 <div class="navbar__product-item-products col xl-4 lg-4">
                                     <div class="item-products__collection-title">Product Design<br>& Manufacturing </div>
                                     <a class="item-products__collection-box" href="https://www.autodesk.com/collections/product-design-manufacturing/overview" target="__blank">
-                                        <img src="./assets/img/1. header_navbar/fixedbar/product-design-manufacturing-collection-uhblack-banner-lockup-364x40.png" alt="pdm logo">
+                                        <img src="./assets/img/1_header_navbar/fixedbar/product-design-manufacturing-collection-uhblack-banner-lockup-364x40.png" alt="pdm logo">
                                         <p>Professional CAD/CAM tools built on Inventor and AutoCAD</p>
                                     </a>
                                     <div class="item-products__collection-list">
@@ -52,7 +52,7 @@ function navbar_product() {
                                 <div class="navbar__product-item-products col xl-4 lg-4">
                                     <div class="item-products__collection-title">Media<br>& Entertainment</div>
                                     <a class="item-products__collection-box" href="https://www.autodesk.com/collections/media-entertainment/overview" target="__blank">
-                                        <img src="./assets/img/1. header_navbar/fixedbar/media-entertainment-collection-uhblack-banner-lockup-364x40.png" alt="me logo">
+                                        <img src="./assets/img/1_header_navbar/fixedbar/media-entertainment-collection-uhblack-banner-lockup-364x40.png" alt="me logo">
                                         <p>Entertainment content creation tools, including 3ds Max and Maya</p>
                                     </a>
                                     <div class="item-products__collection-list">

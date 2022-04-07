@@ -27,7 +27,7 @@ function main_items() {
                                     </div>
                                 <div class="img-wrap xl-6 lg-6 l-6">
                                     <div class="item-img">
-                                        <img class="item-link-img" src="./assets/img/2. body_container/new-possible-thumb-720x480.jpg" alt="image-here">
+                                        <img class="item-link-img" src="./assets/img/2_body_container/new-possible-thumb-720x480.jpg" alt="image-here">
                                     </div>
                                 </div>
                             </a>
@@ -53,7 +53,7 @@ function main_items() {
                                 </div>
                                 <div class="img-wrap">
                                     <div class="item-img img-gradient">
-                                        <img class="item-link-img" src="./assets/img/2. body_container/education-thumb-720x480.jpg" alt="image-here">
+                                        <img class="item-link-img" src="./assets/img/2_body_container/education-thumb-720x480.jpg" alt="image-here">
                                     </div>
                                 </div>
                             </a>
@@ -79,7 +79,7 @@ function main_items() {
                                 <div class="img-wrap">
                                     <div class="item-img img-gradient">
                                         <h4 class="item-img__copyright-text">Image courtesy of Hayes Davidson</h4>
-                                        <img class="item-link-img" src="./assets/img/2. body_container/autodesk-story-thumb-720x480.jpg" alt="image-here">
+                                        <img class="item-link-img" src="./assets/img/2_body_container/autodesk-story-thumb-720x480.jpg" alt="image-here">
                                     </div>
                                 </div>
                             </a>

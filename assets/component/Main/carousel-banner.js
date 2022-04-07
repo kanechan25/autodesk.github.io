@@ -24,7 +24,7 @@ function carousel_banner() {
                                 <h1 class="slide__text-line">Build it.</h1>
                                 <h1 class="slide__text-line">Autodesk it.</h1>
                             </div>
-                            <!-- <img class="slide__img" src="./assets/img/2. body_carousel/aec-factoryos-hero-banner-2000x1200.jpg"> -->
+                            <!-- <img class="slide__img" src="./assets/img/2_body_carousel/aec-factoryos-hero-banner-2000x1200.jpg"> -->
                             <p class="slide__copyright">Image courtesy of Factory_OS</p>
                         </div>
                 
@@ -34,7 +34,7 @@ function carousel_banner() {
                                 <h1 class="slide__text-line">Manufacture it.</h1>
                                 <h1 class="slide__text-line">Autodesk it.</h1>
                             </div>
-                            <!-- <img class="slide__img" src="./assets/img/2. body_carousel/pdm-hyundai-hero-banner-2000x1200.jpg"> -->
+                            <!-- <img class="slide__img" src="./assets/img/2_body_carousel/pdm-hyundai-hero-banner-2000x1200.jpg"> -->
                             <p class="slide__copyright">Image courtesy of Huyndai Motor Group</p>
                         </div>
                 
@@ -44,7 +44,7 @@ function carousel_banner() {
                                 <h1 class="slide__text-line">Render it.</h1>
                                 <h1 class="slide__text-line">Autodesk it.</h1>
                             </div>
-                            <!-- <img class="slide__img" src="./assets/img/2. body_carousel/me-laika-hero-banner-2000x1200.jpg"> -->
+                            <!-- <img class="slide__img" src="./assets/img/2_body_carousel/me-laika-hero-banner-2000x1200.jpg"> -->
                             <p class="slide__copyright">Image courtesy of LAIKA</p>
                         </div>
                 
