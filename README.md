@@ -1,7 +1,7 @@
-## Hi, I'm Khoa Tran <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">  BIM Technologist - Web Developer 
+## Hi, I'm Khoa Tran <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px" height="25px">  Fullstack Web Developer 
 ## <a href="https://kanechan25.github.io/autodesk.github.io/" target="_blank" rel="noopener noreferrer" title="https://kanechan25.github.io/autodesk.github.io/">Click here to go to my Autodesk website</a>
 - In a tiny contest, I have done this website as a submission.
-- It's written by Html + Scss + JavaScript
+- It's written by Html + Scss + only Pure JavaScript
 - This is a Responsive Website
 - On PC/Laptop
 -	<img src="https://github.com/kanechan25/autodesk.github.io/blob/main/assets/img/autodesk-PC.gif">
